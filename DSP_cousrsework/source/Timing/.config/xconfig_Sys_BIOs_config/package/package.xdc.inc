@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_Sys_BIOs_config.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-z52
+package/xconfig_Sys_BIOs_config.java
+package/xconfig_Sys_BIOs_config.class
+package/package_xconfig_Sys_BIOs_config.c
+package/package.defs.h
+package/xconfig_Sys_BIOs_config.ccs

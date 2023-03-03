@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_FFTProj" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/FFTProj_pe66.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/Users/Scott/Dropbox/CCS5/FFTProj/FFTProj.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/FFTProj_pe66.mak" src="package.bld"/>
+        <srcFile name="package/cfg/FFTProj_pe66.oe66.dep" src="package/cfg/FFTProj_pe66.c"/>
+        <srcFile name="package/cfg/FFTProj_pe66.dep" src="package/cfg/FFTProj_pe66.cfg"/>
+        <srcFile name="package/cfg/FFTProj.xe66.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_FFTProj.tar.dep" src="package/rel/xconfig_FFTProj.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.elf.C66"
+            version="ti.targets.elf.C66{1,0,7.4,4"
+            rawVersion="7.4.4"
+            platform="ti.platforms.simTCI6616"
+            isa="66"
+            suffix="e66"
+            rootDir="C:/ti/ccsv5/tools/compiler/c6000_7.4.4"
+            os="undefined"
+            rts="ti.targets.rts6000">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="FFTProj"
+        pname="FFTProj.pe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evm6678"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/FFTProj_pe66.cfg"
+        xCfgPrefix="package/cfg/FFTProj_pe66"
+        cfgScript="C:/Users/Scott/Dropbox/CCS5/FFTProj/FFTProj.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="FFTProj"
+        pname="FFTProj.xe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evm6678"
+        profile="release"
+        xCfgScript="package/cfg/FFTProj_pe66.cfg"
+        xCfgPrefix="package/cfg/FFTProj_pe66"
+        cfgScript="C:/Users/Scott/Dropbox/CCS5/FFTProj/FFTProj.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="FFTProj.xe66"
+        args=""
+        groupName="FFTProj.xe66"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_FFTProj"
+        pname="xconfig_FFTProj.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

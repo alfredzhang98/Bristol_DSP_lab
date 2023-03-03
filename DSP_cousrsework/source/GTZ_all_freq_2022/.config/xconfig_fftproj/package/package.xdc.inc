@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_FFTProj.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-z52
+package/xconfig_FFTProj.java
+package/xconfig_FFTProj.class
+package/package_xconfig_FFTProj.c
+package/package.defs.h
+package/xconfig_FFTProj.ccs
