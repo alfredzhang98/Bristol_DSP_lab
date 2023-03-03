@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'D:/iCloud/iCloudDrive/Desktop/DSP_cousrsework/source/GTZ_One_freq/Sys_BIOs_config.cfg',
+        cfgScript: 'E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_One_freq/Sys_BIOs_config.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../Sys_BIOs_config.cfg',
-    outputPath: 'D:/iCloud/iCloudDrive/Desktop/DSP_cousrsework/source/GTZ_One_freq/Debug/configPkg',
+    outputPath: 'E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_One_freq/Debug/configPkg',
     exeName:    'Sys_BIOs_config' + suffix,
     exeIntName: 'Sys_BIOs_config' + suffix.replace('.', '_'),
     targ:       targ,

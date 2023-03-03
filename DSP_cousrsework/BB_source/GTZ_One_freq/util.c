@@ -21,6 +21,7 @@ char digit;
 
 int freq1, freq2;
 int mag1, mag2;
+int flag = 0;
 
 int sample, gtz_out[8];
 
@@ -45,7 +46,7 @@ void task0_dtmfGen(void)
 
 void task1_dtmfDetect(void)
 {
-	int i, a1=0, a2=0, f1=0, f2=0, dig;
+//	int i, a1=0, a2=0, f1=0, f2=0, dig;
 
 
 	System_printf("\n I am in Task 1 for the first time, please wait:\n");
@@ -53,23 +54,16 @@ void task1_dtmfDetect(void)
 
 	while (1) {
 
-
-		Task_sleep(205);  /* 0.25 second for 125us tick */
-
-
-		System_printf("\n The GTZ is %d\n", gtz_out[0]);
-
-
-		System_printf(" I am leaving Task 1, please wait for a minute or so to get the next GTZ:\n");
-		System_flush();
+		Task_sleep(210);  /* 0.25 second for 125us tick */
+		if(flag != 0){
+			System_printf("\n The GTZ is %d\n", gtz_out[0]);
+			System_printf(" I am leaving Task 1, please wait for the next GTZ:\n");
+			System_flush();
+		}
 
 
-		a1=0, a2=0, f1=0, f2=0;
-		     }
-
-
-
-
+//		a1=0, a2=0, f1=0, f2=0;
+	 }
 
 }
 

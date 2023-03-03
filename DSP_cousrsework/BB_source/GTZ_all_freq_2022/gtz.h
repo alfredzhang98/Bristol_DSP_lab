@@ -10,4 +10,13 @@
 #define NO_OF_SAMPLES  (206*8)
 #define PI             3.1415926535897932384626433832795
 
+//#define N SAMPLING_RATE / 100
+
+#define DIGHIT_NUM 16
+#define DTMF_NUM 8
+#define DTMF_HALF_NUM DTMF_NUM/2
+
+#define THRESHOLD_POWER 200
+#define N_VAL 206
+
 #endif /* GTZ_H_ */

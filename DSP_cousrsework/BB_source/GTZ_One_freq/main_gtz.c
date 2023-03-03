@@ -29,15 +29,16 @@ void clk_SWI_GTZ_0697Hz(UArg arg0);
 extern void task0_dtmfGen(void);
 extern void task1_dtmfDetect(void);
 
-extern double calculate_coef(int freq);
+extern float calculate_coef(int freq);
 
 extern char digit;
 extern int sample, mag1, mag2, freq1, freq2, gtz_out[8];
+extern int flag;
 extern short coef[8];
 
 // The Goertzel parameter
 int N = 0;
-const int N_const = 205;
+const int N_const = 206;
 
 /*
  *  ======== main ========
@@ -62,7 +63,7 @@ void main(void)
     /* Instantiate 8 parallel ISRs for each of the eight Goertzel coefficients */
 	Clock_create(clk_SWI_GTZ_0697Hz, TIMEOUT, &clkParams, NULL);
 
-	mag1 = 32768.0; mag2 = 32768.0; freq1 = 770; // I am setting freq1 = 697Hz to test my GTZ algorithm with one frequency.
+	mag1 = 32768.0; mag2 = 32768.0; freq1 = 1633; // I am setting freq1 = 770Hz to test my GTZ algorithm with one frequency.
 
 
 	/* Start SYS_BIOS */
@@ -79,7 +80,7 @@ void clk_SWI_Generate_DTMF(UArg arg0)
 	static int tick;
 	tick = Clock_getTicks();
 //	sample = (int) 32768.0*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
-	sample = (int) 32768.0*sin(2.0*PI*freq1*TICK_PERIOD*tick);
+	sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
 	sample = _dshr(sample,12);
 }
 
@@ -90,8 +91,6 @@ void clk_SWI_Generate_DTMF(UArg arg0)
  */
 void clk_SWI_GTZ_0697Hz(UArg arg0)
 {
-
-
 	int prod1, prod2, prod3;
 	short input;
    	static short delay;
@@ -99,7 +98,7 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
    	static short delay_2 = 0;
 
    	static int Goertzel_Value = 0;
-   	short coef_1 = coef[0];
+   	short coef_1 = coef[7];
 
 
    	//we have several intermediates which need recursion
@@ -111,7 +110,7 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
 	N++;
 
 	//every 205 times get one result
-	if(N % N_const == 0){
+	if(N == N_const){
 
 		//production of the Goertzel value
 		prod1 = _dshr(_mpy32ll(delay_1,delay_1), 8);
@@ -124,28 +123,20 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
 
 		//Init the calculation
 		N=0;
+		flag = 1;
 		delay = delay_1 = delay_2 = 0;
 	}
-
 }
 
 // calculation the coefficient of a particular frequency.
-double calculate_coef(int freq){
+float calculate_coef(int freq){
 	int n_1 = N_const;
 	int K = round(0.5 + n_1 * freq / SAMPLING_RATE);
-	double W = (K * 2 * PI / n_1);
-	double cos_w = cos(W);
-	double coef = 2 * cos_w;
+	float W = (K * 2 * PI / n_1);
+	float cos_w = cos(W);
+	float coef = 2 * cos_w;
 	return coef;
 }
-//
-//// change the double to the INT which means the fractional
-//short change_fractional(double coef){
-//	short fractional;
-//
-//
-//
-//}
 
 
 

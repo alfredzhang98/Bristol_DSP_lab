@@ -28,6 +28,11 @@ extern int sample, tdiff, tdiff_final, gtz_out[8];
 extern short coef[8];
 extern int flag;
 
+extern short dtmf_freqs[DTMF_NUM];
+extern short dtmf_coef[DTMF_NUM];
+extern char dtmf_keys;
+extern short digit_freqs[DIGHIT_NUM][2];
+
 short data[NO_OF_SAMPLES];
 short *buffer;
 
@@ -75,6 +80,7 @@ void clk_SWI_Read_Data(UArg arg0) {
 	static int tick;
 	tick = Clock_getTicks();
 	sample = data[tick%NO_OF_SAMPLES];
+	sample =  sample >> 5;
 }
 
 /*
@@ -95,8 +101,23 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 	static int Goertzel_Value = 0;
 	short input = (short) (sample);
 
+	//The production during the calculation
+   	static short delay[DTMF_NUM];
+   	static short delay_1[DTMF_NUM] = {0};
+   	static short delay_2[DTMF_NUM] = {0};
+
+   	int i;
+   	int prod1, prod2, prod3;
+
+
 	/* TODO 1. Complete the feedback loop of the GTZ algorithm*/
 	/* ========================= */
+   	for(i = 0; i < DTMF_NUM; i++){
+		prod1 = ((int) dtmf_coef[i] * (int) delay_1[i]) >> 15;
+		delay[i] = input + prod1 * 2 - delay_2[i];
+		delay_2[i] = delay_1[i];
+		delay_1[i] = delay[i];
+   	}
 
 
 	/* ========================= */
@@ -107,17 +128,31 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 	//Record elapsed time
 	tdiff = stop-start;
 
-	if (N == 206) {
+	if (N == N_VAL) {
 	   	//Record start time
 		start = Timestamp_get32();
 
 		/* TODO 2. Complete the feedforward loop of the GTZ algorithm*/
 		/* ========================= */
+		for(i = 0; i < DTMF_NUM; i++){
+			//production of the Goertzel value
+			prod1 = _dshr(_mpy32ll(delay_1[i],delay_1[i]), 8);
+			prod2 = _dshr(_mpy32ll(delay_2[i],delay_2[i]), 8);
+			prod3 = (((int) delay_1[i] * delay_2[i] >> 8) * dtmf_coef[i] >> 15) * 2;
+
+			//get Goertzel value
+			Goertzel_Value =  prod1 + prod2 - prod3;
+			gtz_out[i] = Goertzel_Value;
+		}
+
 
 		/* gtz_out[..] = ... */
 		/* ========================= */
 		flag = 1;
 		N = 0;
+		for(i = 0; i < DTMF_NUM; i++){
+			delay[i] = delay_1[i] = delay_2[i] = 0;
+		}
 
 		//Record stop time
 		stop = Timestamp_get32();
