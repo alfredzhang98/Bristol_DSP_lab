@@ -63,7 +63,7 @@ void main(void)
     /* Instantiate 8 parallel ISRs for each of the eight Goertzel coefficients */
 	Clock_create(clk_SWI_GTZ_0697Hz, TIMEOUT, &clkParams, NULL);
 
-	mag1 = 32768.0; mag2 = 32768.0; freq1 = 1633; // I am setting freq1 = 697Hz to test my GTZ algorithm with one frequency.
+	mag1 = 32768.0; mag2 = 32768.0; freq1 = 1633; // I am setting freq1 = 770Hz to test my GTZ algorithm with one frequency.
 
 
 	/* Start SYS_BIOS */
@@ -80,7 +80,7 @@ void clk_SWI_Generate_DTMF(UArg arg0)
 	static int tick;
 	tick = Clock_getTicks();
 //	sample = (int) 32768.0*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
-	sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick);
+	sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
 	sample = _dshr(sample,12);
 }
 
@@ -98,12 +98,12 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
    	static short delay_2 = 0;
 
    	static int Goertzel_Value = 0;
-   	short coef_1 = coef[1];
+   	short coef_1 = coef[7];
 
 
    	//we have several intermediates which need recursion
 	input = (short) sample;
-	prod1 = ((int) coef_1 * (int) delay_1) >> 15;
+	prod1 = _dshr(((int) coef_1 * (int) delay_1), 15);
 	delay = input + prod1 * 2 - delay_2;
 	delay_2 = delay_1;
 	delay_1 = delay;
@@ -111,7 +111,6 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
 
 	//every 205 times get one result
 	if(N == N_const){
-
 		//production of the Goertzel value
 		prod1 = _dshr(_mpy32ll(delay_1,delay_1), 8);
 		prod2 = _dshr(_mpy32ll(delay_2,delay_2), 8);

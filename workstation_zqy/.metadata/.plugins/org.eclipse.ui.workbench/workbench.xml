@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench version="2.0">
 <workbenchAdvisor/>
+<<<<<<< HEAD
 <window height="1144" width="1173" x="110" y="124">
+=======
+<window height="768" maximized="true" width="1610" x="620" y="236">
+>>>>>>> alfred_test
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView"/>
 </fastViewData>
@@ -18,41 +22,39 @@
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="57" y="22"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.ti.ccstudio.debug.ui.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ti.ccstudio.debug.ui.toolbar" itemType="typeToolBarContribution" x="149" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="57" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1677843390509" focus="true" label="Workspace - CCS Edit">
+<page aggregateWorkingSetId="Aggregate for window 1677936652222" focus="true" label="Workspace - CCS Edit">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="2"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main_gtz.c" partName="main_gtz.c" path="E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/main_gtz.c" title="main_gtz.c" tooltip="GTZ_all_freq_2022/main_gtz.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main_gtz.c" partName="main_gtz.c" path="E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/main_gtz.c" title="main_gtz.c" tooltip="GTZ_all_freq_2022/main_gtz.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GTZ_all_freq_2022/main_gtz.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3513" selectionTopPixel="1901"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1600" selectionTopPixel="580"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gtz.h" partName="gtz.h" path="E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/gtz.h" title="gtz.h" tooltip="GTZ_all_freq_2022/gtz.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GTZ_all_freq_2022/gtz.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="412" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="util.c" partName="util.c" path="E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/util.c" title="util.c" tooltip="GTZ_all_freq_2022/util.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="util.c" partName="util.c" path="E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/util.c" title="util.c" tooltip="GTZ_all_freq_2022/util.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GTZ_all_freq_2022/util.c"/>
+<<<<<<< HEAD
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2035" selectionTopPixel="341"/>
+=======
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1386" selectionTopPixel="181"/>
+>>>>>>> alfred_test
 </editor>
 </editors>
 <views>
@@ -64,21 +66,23 @@
 </view>
 <view id="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView" partName="Target Configurations"/>
 <view id="org.eclipse.debug.ui.RegisterView" partName="Registers"/>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (3 items)"/>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (2 items)"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="835"/>
+<columnWidths org.eclipse.ui.ide.locationField="120" org.eclipse.ui.ide.markerType="120" org.eclipse.ui.ide.pathField="160" org.eclipse.ui.ide.resourceField="120" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
@@ -343,17 +347,38 @@
 <hide_toolbar_item_id id="com.ti.ccstudio.debug.ui.command.realtime"/>
 <hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.RunDropDownAction"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<<<<<<< HEAD
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
+=======
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.299444"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d45e26">
+>>>>>>> alfred_test
 <folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
+<<<<<<< HEAD
+=======
+</folder>
+</info>
+<info folder="true" part="left" ratio="0.25" ratioLeft="638" ratioRight="1914" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d45e26">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+>>>>>>> alfred_test
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.749499" ratioLeft="748" ratioRight="250" relationship="2" relative="left">
@@ -369,6 +394,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24960506" ratioLeft="158" ratioRight="475" relationship="4" relative="topLeft"/>
+<<<<<<< HEAD
 <info folder="true" part="bottomLeft" ratio="0.69665605" ratioLeft="875" ratioRight="381" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -380,6 +406,11 @@
 <info folder="true" part="bottomRight" ratio="0.49928468" ratioLeft="349" ratioRight="350" relationship="2" relative="bottomLeft">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+=======
+<info folder="true" part="bottomRight" ratio="0.69984204" ratioLeft="443" ratioRight="190" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+>>>>>>> alfred_test
 <page content="com.ti.ccstudio.project.ui.views.AdviceView" label="LabelNotFound"/>
 <page content="com.ti.ccstudio.scripting.console.ConsoleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -416,6 +447,9 @@
 </info>
 <info part="org.eclipse.rtsc.xdctools.model.ui.views.packageView" ratio="0.49921012" ratioLeft="316" ratioRight="317" relationship="4" relative="left"/>
 </mainWindow>
+<hiddenWindow height="584" width="431" x="162" y="108">
+<view id="org.eclipse.ui.console.ConsoleView"/>
+</hiddenWindow>
 </layout>
 </perspective>
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
@@ -639,42 +673,67 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.debug.ui.RegisterView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
-<fastViews>&#x0A;<view id="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView" ratio="0.3"/>
+<fastViews>
+<view id="com.ti.ccstudio.system.setup.ui.views.TargetConfigurationView" ratio="0.3"/>
 </fastViews>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.749782" ratioLeft="860" ratioRight="287" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1914" ratioRight="638" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="topLeft" ratio="0.24934612" ratioLeft="286" ratioRight="861" relationship="2" relative="left">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<info folder="true" part="topLeft" ratio="0.25" ratioLeft="638" ratioRight="1914" relationship="2" relative="left">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.3128981" ratioLeft="393" ratioRight="863" relationship="4" relative="topLeft"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@19a4e8e" ratio="0.5744186" ratioLeft="494" ratioRight="366" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
+<info part="org.eclipse.ui.editorss" ratio="0.2494043" ratioLeft="314" ratioRight="945" relationship="4" relative="topLeft"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1c36ac6" ratio="0.6994709" ratioLeft="661" ratioRight="284" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="bottomRight" ratio="0.49956408" ratioLeft="573" ratioRight="574" relationship="2" relative="org.eclipse.ui.internal.ViewStack@19a4e8e">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="com.ti.ccstudio.scripting.console.ConsoleView" label="LabelNotFound"/>
+<info folder="true" part="bottomRight" ratio="0.5" ratioLeft="1276" ratioRight="1276" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1c36ac6">
+<folder appearance="2" expanded="2">
+<page content="com.ti.ccstudio.scripting.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.69921535" ratioLeft="802" ratioRight="345" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<info folder="true" part="right" ratio="0.6998433" ratioLeft="1786" ratioRight="766" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.44986922" ratioLeft="516" ratioRight="631" relationship="2" relative="topLeft">&#x0A;<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@16db649" ratio="0.39829606" ratioLeft="374" ratioRight="565" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topRight" ratio="0.44984326" ratioLeft="1148" ratioRight="1404" relationship="2" relative="topLeft">
+<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
@@ -687,7 +746,9 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/util.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/main_gtz.c"/>
+<<<<<<< HEAD
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/GTZ_all_freq_2022/data.bin"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/gtz.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/util.c"/>
@@ -704,19 +765,88 @@
 </editors>
 <item historyLabel="main_gtz.c" index="0">
 <position info="not_deleted" x="836" y="0"/>
+=======
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/gtz.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_One_freq/main_gtz.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/main_gtz.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/GTZ_all_freq_2022/util.c"/>
+</editors>
+<item historyLabel="gtz.h" index="2">
+<position info="not_deleted" x="335" y="15"/>
 </item>
-<item historyLabel="main_gtz.c" index="0">
-<position info="not_deleted" x="963" y="0"/>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="3830" y="0"/>
 </item>
+<item historyLabel="main_gtz.c" index="3">
+<position info="not_deleted" x="1605" y="5"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="3935" y="0"/>
+</item>
+<item historyLabel="gtz.h" index="2">
+<position info="not_deleted" x="299" y="13"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="3935" y="0"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="4372" y="0"/>
+>>>>>>> alfred_test
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="4134" y="0"/>
+</item>
+<<<<<<< HEAD
 <item historyLabel="data.bin" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="data.bin" index="1">
 <position info="not_deleted" x="0" y="0"/>
+=======
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="4372" y="0"/>
 </item>
-<item historyLabel="main_gtz.c" index="0">
-<position info="not_deleted" x="963" y="0"/>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="4134" y="0"/>
 </item>
+<item historyLabel="main_gtz.c" index="1">
+<position info="not_deleted" x="2791" y="0"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="2477" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="1">
+<position info="not_deleted" x="3598" y="0"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="4372" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="872" y="6"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="1060" y="5"/>
+</item>
+<item historyLabel="util.c" index="0">
+<position info="not_deleted" x="2478" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="1056" y="9"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="4647" y="0"/>
+>>>>>>> alfred_test
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="1296" y="0"/>
+</item>
+<<<<<<< HEAD
 <item historyLabel="gtz.h" index="2">
 <position info="not_deleted" x="269" y="0"/>
 </item>
@@ -800,10 +930,33 @@
 </item>
 <item historyLabel="main_gtz.c" index="4">
 <position info="not_deleted" x="3061" y="30"/>
+=======
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="3985" y="0"/>
 </item>
-<item historyLabel="main_gtz.c" index="0">
-<position info="not_deleted" x="3513" y="0"/>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="751" y="0"/>
 </item>
+<item historyLabel="util.c" index="5">
+<position/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="1264" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="3696" y="11"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position/>
+>>>>>>> alfred_test
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="3696" y="11"/>
+</item>
+<<<<<<< HEAD
 <item historyLabel="gtz.h" index="2">
 <position info="not_deleted" x="269" y="0"/>
 </item>
@@ -851,6 +1004,67 @@
 </item>
 <item active="true" historyLabel="gtz.h" index="9">
 <position info="not_deleted" x="412" y="0"/>
+=======
+<item historyLabel="util.c" index="5">
+<position/>
+</item>
+<item historyLabel="util.c" index="5">
+<position/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="353" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="2896" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="351" y="5"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="2913" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="1319" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="2913" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="4557" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="3428" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="4647" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="2866" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="4051" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="1127" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="4733" y="0"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="3721" y="0"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="2329" y="26"/>
+</item>
+<item historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="2893" y="5"/>
+</item>
+<item historyLabel="util.c" index="5">
+<position info="not_deleted" x="1386" y="0"/>
+</item>
+<item active="true" historyLabel="main_gtz.c" index="4">
+<position info="not_deleted" x="751" y="0"/>
+>>>>>>> alfred_test
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -869,36 +1083,33 @@
 <trimItem IMemento.internal.id="com.ti.ccstudio.debug.ui.profileClockStatus"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<<<<<<< HEAD
+=======
+<trimItem IMemento.internal.id="bottomRight"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1ba0281"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1c36ac6"/>
+>>>>>>> alfred_test
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="util.c" tooltip="GTZ_all_freq_2022/util.c">
+<persistable path="/GTZ_all_freq_2022/util.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main_gtz.c" tooltip="GTZ_all_freq_2022/main_gtz.c">
+<persistable path="/GTZ_all_freq_2022/main_gtz.c"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main_gtz.c" tooltip="GTZ_One_freq/main_gtz.c">
 <persistable path="/GTZ_One_freq/main_gtz.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="data.bin" tooltip="GTZ_all_freq_2022/data.bin">
-<persistable path="/GTZ_all_freq_2022/data.bin"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gtz.h" tooltip="GTZ_all_freq_2022/gtz.h">
+<persistable path="/GTZ_all_freq_2022/gtz.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="util.c" tooltip="GTZ_One_freq/util.c">
 <persistable path="/GTZ_One_freq/util.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gtz.h" tooltip="GTZ_One_freq/gtz.h">
 <persistable path="/GTZ_One_freq/gtz.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="util.c" tooltip="GTZ_all_freq_2022/util.c">
-<persistable path="/GTZ_all_freq_2022/util.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gtz.h" tooltip="GTZ_all_freq_2022/gtz.h">
-<persistable path="/GTZ_all_freq_2022/gtz.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="answer.txt" tooltip="GTZ_all_freq_2022/answer.txt">
-<persistable path="/GTZ_all_freq_2022/answer.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="answer.wav" tooltip="GTZ_all_freq_2022/answer.wav">
-<persistable path="/GTZ_all_freq_2022/answer.wav"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main_gtz.c" tooltip="GTZ_all_freq_2022/main_gtz.c">
-<persistable path="/GTZ_all_freq_2022/main_gtz.c"/>
 </file>
 <file factoryID="com.ti.ccstudio.resource.explorer.editor.elementFactory" id="com.ti.ccstudio.resource.explorer.editor.resourceExplorer" name="TI Resource Explorer" tooltip="TI Resource Explorer">
 <persistable name="TI Resource Explorer"/>
