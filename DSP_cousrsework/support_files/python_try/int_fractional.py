@@ -1,6 +1,6 @@
 import math
 
-input = 2
+input = 0x6D02
 
 str_bin = (bin(input))
 str_bin =  str_bin [2:]
