@@ -1,0 +1,31 @@
+
+**** Build of configuration Debug for project GTZ_One_freq ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../Sys_BIOs_config.cfg'
+'Invoking: XDCtools'
+"D:/Software/CCS_5.5/xdctools_3_25_03_72/xs" --xdcpath="D:/Software/CCS_5.5/bios_6_35_04_50/packages;D:/Software/CCS_5.5/ccsv5/ccs_base;D:/Software/CCS_5.5/uia_1_03_01_08/packages;" xdc.tools.configuro -o configPkg -t ti.targets.elf.C66 -p ti.platforms.simTCI6608 -r release -c "D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4" "../Sys_BIOs_config.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring Sys_BIOs_config.xe66 from package/cfg/Sys_BIOs_config_pe66.cfg ...
+cle66 package/cfg/Sys_BIOs_config_pe66.c ...
+'Finished building: ../Sys_BIOs_config.cfg'
+' '
+'Building file: ../main_gtz.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main_gtz.pp" --cmd_file="./configPkg/compiler.opt"  "../main_gtz.c"
+'Finished building: ../main_gtz.c'
+' '
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+'Finished building: ../util.c'
+' '
+'Building target: GTZ_One_freq.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_One_freq.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_One_freq_linkInfo.xml" --rom_model -o "GTZ_One_freq.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_One_freq.out'
+' '
+
+**** Build Finished ****
