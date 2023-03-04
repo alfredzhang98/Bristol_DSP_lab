@@ -1,0 +1,25 @@
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main_gtz.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main_gtz.pp" --cmd_file="./configPkg/compiler.opt"  "../main_gtz.c"
+'Finished building: ../main_gtz.c'
+' '
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+"../util.c", line 64: warning #552-D: variable "j" was set but never used
+"../util.c", line 107: warning #179-D: variable "i" was declared but never referenced
+"../util.c", line 108: warning #552-D: variable "digit" was set but never used
+'Finished building: ../util.c'
+' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
+' '
+
+**** Build Finished ****
