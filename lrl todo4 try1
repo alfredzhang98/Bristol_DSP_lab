@@ -1,1 +1,120 @@
-d
+/*
+ *  ======== util.c ========
+ */
+
+#include <xdc/std.h>
+#include <xdc/runtime/System.h>
+
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Clock.h>
+#include <ti/sysbios/knl/Task.h>
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <math.h>
+#include "gtz.h"
+
+
+
+
+
+                                                    //定义全局变量tdiff、tdiff_final、sample、gtz_out、flag和coef。
+int tdiff,tdiff_final;                        //tdiff和tdiff_final用于计时
+int sample, gtz_out[8];                 //sample用于采样，gtz_out用于存储8个数字的Goertzel变换结果
+int flag = 0;                                  //flag用于标记是否有数据需要处理，用于检测DTMF信号
+
+short coef[8] ={ 0x6D02, 0x68AD, 0x63FC, 0x5EE7, 0x4A70, 0x4090, 0x3290, 0x23CE }; 
+                                                    //coef包含了8个Goertzel算法的系数，用于生成DTMF信号
+
+
+
+
+void task1_dtmfDetect();
+void task2_dtmfGenerate(char* keys);
+extern short* buffer;
+
+
+
+
+
+
+//task1_dtmfDetect函数用于检测输入的DTMF信号，
+//它包括一个4x4的按键矩阵（pad）和一个结果数组（result）。
+
+void task1_dtmfDetect() {
+	int i, n;
+	char pad[4][4] = {{'1','2','3','A'},{'4','5','6','B'},{'7','8','9','C'},{'*','0','#','D'}};
+	char result[8];
+
+
+//使用一个循环，在每个循环中等待flag被设置为1，然后计算8个数字的Goertzel变换结果，
+//根据这些结果将输入信号的数字识别出来，存储到结果数组中，并将flag设置为0，以便下一次检测
+	for(n=0;n<8;n++) {
+		while (!flag) Task_sleep(210);
+		/* TODO 3. Complete code to detect the 8 digits based on the GTZ output */
+		/* ========================= */
+
+		/* result[n] = ... */
+		/* ========================= */
+		printf("%c\n", result[n]);
+		flag = 0;
+	}
+	printf("\nDetection finished\n");
+	printf("Generating audio\n");
+	task2_dtmfGenerate(result);
+	printf("Finished\n");
+}
+
+
+
+//一旦所有数字都被检测完毕，task2_dtmfGenerate函数将被调用，以生成DTMF信号
+
+void task2_dtmfGenerate(char* keys)
+{
+	int fs = 10000;                                                                 //采样率
+	float tone_length = 0.5;                                                   //每个音调的长度，定义为0.5s
+	int n_tones = 8;                                                               //要生成音调的数量为8个
+	int samples_per_tone = (int) (tone_length * fs);              //每个音调的采样数，公式：samples_per_tone = (int) (tone_length * fs)
+	int samples_total = samples_per_tone * n_tones;           //要生成的所有音调的采样数之和
+	int i, n;
+	char digit;
+	for(n=0;n<n_tones;n++) {
+		digit = keys[n];
+                                
+                                freq1 = f[r[n]][c[n]];
+                                freq2 = f[2+r[n]][c[n]];
+                                for (m = 0; m < samples_per_tone; m++) {
+                                      sample = 0;
+                                      generateDTMF(freq1, freq2, tone_length, &sample);
+                                      buffer[n*samples_per_tone+m] += sample;
+		}
+	}
+
+	/* Writing the data to a wav file */
+	FILE* fp = fopen("../answer.wav", "wb");
+	int datasize = samples_total*2;
+	int filesize = 36+datasize;
+	int headersize = 16;
+	int datatype = 1;
+	int nchannel = 1;
+	int byterate = fs*2;
+	int align = 2;
+	int bitpersample = 16;
+
+	fwrite("RIFF", 1, 4, fp);
+	fwrite(&filesize, 4, 1, fp);
+	fwrite("WAVE", 1, 4, fp);
+	fwrite("fmt ", 1, 4, fp);
+	fwrite(&headersize, 4, 1, fp);
+	fwrite(&datatype, 2, 1, fp);
+	fwrite(&nchannel, 2, 1, fp);
+	fwrite(&fs, 4, 1, fp);
+	fwrite(&byterate, 4, 1, fp);
+	fwrite(&align, 2, 1, fp);
+	fwrite(&bitpersample, 2, 1, fp);
+	fwrite("data", 1, 4, fp);
+	fwrite(&datasize, 4, 1, fp);
+	fwrite(buffer, 2, samples_total, fp);
+	fclose(fp);
+}
