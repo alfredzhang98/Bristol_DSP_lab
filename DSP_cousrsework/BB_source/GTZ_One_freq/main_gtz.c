@@ -103,19 +103,18 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
 
    	//we have several intermediates which need recursion
 	input = (short) sample;
-	prod1 = ((int) coef_1 * (int) delay_1) >> 15;
-	delay = input + prod1 * 2 - delay_2;
+	prod1 = _dshr(((int) coef_1 * (int) delay_1), 15);
+	delay = input + _dshl(prod1, 1) - delay_2;
 	delay_2 = delay_1;
 	delay_1 = delay;
 	N++;
 
 	//every 205 times get one result
 	if(N == N_const){
-
 		//production of the Goertzel value
-		prod1 = _dshr(_mpy32ll(delay_1,delay_1), 8);
-		prod2 = _dshr(_mpy32ll(delay_2,delay_2), 8);
-		prod3 = (((int) delay_1 * delay_2 >> 8) * coef_1 >> 15) * 2;
+		prod1 = _dshr(((int) delay_1 * delay_1), 6);
+		prod2 = _dshr(((int) delay_2 * delay_2), 6);
+		prod3 = _dshl(_dshr((((int) delay_1 * delay_2 >> 6) * coef_1), 15), 1);
 
 		//get Goertzel value
 		Goertzel_Value =  prod1 + prod2 - prod3;

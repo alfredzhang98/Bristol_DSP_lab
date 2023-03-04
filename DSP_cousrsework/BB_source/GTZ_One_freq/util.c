@@ -31,16 +31,10 @@ short coef[8] = {0x6D02, 0x68AD, 0x63FC, 0x5EE7, 0x4A70, 0x4090, 0x3290, 0x23CE}
 void task0_dtmfGen(void)
 {
 
-
-
 // This task is used to read the symbol from the keyboard and set freq1 and freq2
-
 	System_printf("\n I am in Task 0:\n");
 	System_flush();
-
-
 	Task_sleep(500); // to allow the GTZ to be calculated.
-
 
 }
 
@@ -59,6 +53,7 @@ void task1_dtmfDetect(void)
 			System_printf("\n The GTZ is %d\n", gtz_out[0]);
 			System_printf(" I am leaving Task 1, please wait for the next GTZ:\n");
 			System_flush();
+			flag = 0;
 		}
 
 

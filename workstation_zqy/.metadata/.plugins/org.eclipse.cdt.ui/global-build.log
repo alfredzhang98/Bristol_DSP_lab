@@ -1,43 +1,134 @@
 
-**** Clean-only build of configuration Debug for project GTZ_One_freq ****
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
 
-"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k clean 
-DEL /F  "configPkg\linker.cmd" "configPkg\compiler.opt"  "GTZ_One_freq.out"
-RMDIR /S/Q  "configPkg\" 
-DEL /F "main_gtz.pp" "util.pp" 
-DEL /F "main_gtz.obj" "util.obj" 
-'Finished clean'
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+'Finished building: ../util.c'
+' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
 ' '
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project GTZ_One_freq ****
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
 
 "D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
-'Building file: ../Sys_BIOs_config.cfg'
-'Invoking: XDCtools'
-"D:/Software/CCS_5.5/xdctools_3_25_03_72/xs" --xdcpath="D:/Software/CCS_5.5/bios_6_35_04_50/packages;D:/Software/CCS_5.5/ccsv5/ccs_base;D:/Software/CCS_5.5/uia_1_03_01_08/packages;" xdc.tools.configuro -o configPkg -t ti.targets.elf.C66 -p ti.platforms.simTCI6608 -r release -c "D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4" "../Sys_BIOs_config.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring Sys_BIOs_config.xe66 from package/cfg/Sys_BIOs_config_pe66.cfg ...
-cle66 package/cfg/Sys_BIOs_config_pe66.c ...
-'Finished building: ../Sys_BIOs_config.cfg'
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+'Finished building: ../util.c'
 ' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+'Finished building: ../util.c'
+' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+"../util.c", line 122: warning #179-D: variable "j" was declared but never referenced
+'Finished building: ../util.c'
+' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../util.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+"../util.c", line 122: warning #179-D: variable "j" was declared but never referenced
+'Finished building: ../util.c'
+' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
 'Building file: ../main_gtz.c'
 'Invoking: C6000 Compiler'
-"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main_gtz.pp" --cmd_file="./configPkg/compiler.opt"  "../main_gtz.c"
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main_gtz.pp" --cmd_file="./configPkg/compiler.opt"  "../main_gtz.c"
+'Finished building: ../main_gtz.c'
+' '
+'Building target: GTZ_all_freq_2022.out'
+'Invoking: C6000 Linker'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+<Linking>
+'Finished building target: GTZ_all_freq_2022.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project GTZ_all_freq_2022 ****
+
+"D:\\Software\\CCS_5.5\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../main_gtz.c'
+'Invoking: C6000 Compiler'
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main_gtz.pp" --cmd_file="./configPkg/compiler.opt"  "../main_gtz.c"
 'Finished building: ../main_gtz.c'
 ' '
 'Building file: ../util.c'
 'Invoking: C6000 Compiler'
-"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" --cmd_file="./configPkg/compiler.opt"  "../util.c"
+"../util.c", line 125: warning #179-D: variable "j" was declared but never referenced
 'Finished building: ../util.c'
 ' '
-'Building target: GTZ_One_freq.out'
+'Building target: GTZ_all_freq_2022.out'
 'Invoking: C6000 Linker'
-"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_One_freq.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_One_freq_linkInfo.xml" --rom_model -o "GTZ_One_freq.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
+"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" -l"./configPkg/linker.cmd"  "./util.obj" "./main_gtz.obj" -l"libc.a" 
 <Linking>
-'Finished building target: GTZ_One_freq.out'
+'Finished building target: GTZ_all_freq_2022.out'
 ' '
 
 **** Build Finished ****

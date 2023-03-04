@@ -1,7 +1,7 @@
 ******************************************************************************
                TMS320C6x Linker PC v7.4.4                      
 ******************************************************************************
->> Linked Sat Mar 04 13:32:11 2023
+>> Linked Sat Mar 04 14:51:37 2023
 
 OUTPUT FILE NAME:   <GTZ_One_freq.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 0080d860
@@ -825,7 +825,7 @@ ffffffff   __c_args__
 00810b00   abort
 00810b20   atexit
 ffffffff   binit
-00803edc   calculate_coef
+00803ee4   calculate_coef
 00803da8   clk_SWI_GTZ_0697Hz
 00803ca0   clk_SWI_Generate_DTMF
 0081a618   coef
@@ -1637,7 +1637,7 @@ address    name
 00803c18   main
 00803ca0   clk_SWI_Generate_DTMF
 00803da8   clk_SWI_GTZ_0697Hz
-00803edc   calculate_coef
+00803ee4   calculate_coef
 00803fc0   ti_sysbios_family_c64p_Hwi_dispatchC__I
 008042c0   ti_sysbios_heaps_HeapMem_Instance_init__F
 008045a0   cos
