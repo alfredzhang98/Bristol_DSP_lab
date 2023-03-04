@@ -5,7 +5,7 @@ digraph configuration {
     concentrate=true;
     compound=true;
     label="\nConfiguration for configPkg/Sys_BIOs_config.xe66"
-  node [font=Helvetica, fontsize=14, fontcolor=black];  subgraph cluster0 {label=""; __cfg [label="E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/Sys_BIOs_config.cfg", color=white, fontcolor=blue];
+  node [font=Helvetica, fontsize=14, fontcolor=black];  subgraph cluster0 {label=""; __cfg [label="E:/project/DSP_LAB/DSP_cousrsework/source_code/GTZ_all_freq_2022/Sys_BIOs_config.cfg", color=white, fontcolor=blue];
     node [font=Helvetica, fontsize=10];    subgraph cluster1 {
         label="";
         xdc_services_global__top [shape=box,label="xdc.services.global\n1, 0, 0", color=white];

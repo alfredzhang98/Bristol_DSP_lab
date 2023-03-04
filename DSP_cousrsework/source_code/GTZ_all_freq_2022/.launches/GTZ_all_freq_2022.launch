@@ -5,7 +5,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="${build_artifact:GTZ_all_freq_2022}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="GTZ_all_freq_2022"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:GTZ_all_freq_2022}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_all_freq_2022\Debug\GTZ_all_freq_2022.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_all_freq_2022\Debug\GTZ_all_freq_2022.out"/>
 <mapAttribute key="com.ti.ccstudio.debug.ui.displayFormats">
 <mapEntry key="TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0@##separator##@0" value="32-Bit Hex - TI Style"/>
 </mapAttribute>

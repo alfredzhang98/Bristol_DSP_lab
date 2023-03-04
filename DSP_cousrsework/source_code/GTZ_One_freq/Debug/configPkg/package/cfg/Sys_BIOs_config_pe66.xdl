@@ -9,7 +9,7 @@
  */
 
 
--l"E:\project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\configPkg\package\cfg\Sys_BIOs_config_pe66.oe66"
+-l"E:\project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\configPkg\package\cfg\Sys_BIOs_config_pe66.oe66"
 -l"D:\Software\CCS_5.5\uia_1_03_01_08\packages\ti\uia\services\lib\release\ti.uia.services.ae66"
 -l"D:\Software\CCS_5.5\uia_1_03_01_08\packages\ti\uia\sysbios\lib\release\ti.uia.sysbios.ae66"
 -l"D:\Software\CCS_5.5\uia_1_03_01_08\packages\ti\uia\family\c66\lib\release\ti.uia.family.c66.ae66"

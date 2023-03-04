@@ -1,1 +1,0 @@
-New a CCS project at here and import the source_code

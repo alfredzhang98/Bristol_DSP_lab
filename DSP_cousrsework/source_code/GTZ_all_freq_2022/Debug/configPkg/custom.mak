@@ -2,4 +2,4 @@
 .configuro: .libraries,e66 linker.cmd package/cfg/Sys_BIOs_config_pe66.oe66
 
 linker.cmd: package/cfg/Sys_BIOs_config_pe66.xdl
-	$(SED) 's"^\"\(package/cfg/Sys_BIOs_config_pe66cfg.cmd\)\"$""\"E:/project/DSP_LAB/DSP_cousrsework/BB_source/GTZ_all_freq_2022/Debug/configPkg/\1\""' package/cfg/Sys_BIOs_config_pe66.xdl > $@
+	$(SED) 's"^\"\(package/cfg/Sys_BIOs_config_pe66cfg.cmd\)\"$""\"E:/project/DSP_LAB/DSP_cousrsework/source_code/GTZ_all_freq_2022/Debug/configPkg/\1\""' package/cfg/Sys_BIOs_config_pe66.xdl > $@
