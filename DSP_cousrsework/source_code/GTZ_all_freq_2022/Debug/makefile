@@ -115,7 +115,7 @@ all: GTZ_all_freq_2022.out
 GTZ_all_freq_2022.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C6000 Linker'
-	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" $(ORDERED_OBJS)
+	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --display_error_number --diag_warning=225 --diag_wrap=off --no_bad_aliases --debug_software_pipeline -k -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

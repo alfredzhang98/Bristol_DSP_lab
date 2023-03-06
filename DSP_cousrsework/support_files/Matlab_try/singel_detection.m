@@ -3,7 +3,7 @@ clear
 close all;
 
 % from the python generate
-coef = 0.85162353515625;
+coef = 0.817779541015625;
 PI = 3.1415926535897932384626433832795;
 SAMPLE_RATE = 8000;
 AMP = 32768;
@@ -16,7 +16,7 @@ t=0;
 
 powers = zeros(1,2000);
 
-for freq=1:2000 
+for freq=1:2000
     t=0;
     for i = 0:206
         input = AMP * sin(2.0*PI*freq * t / SAMPLE_RATE);

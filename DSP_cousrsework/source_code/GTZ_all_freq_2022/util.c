@@ -22,9 +22,12 @@
 #include <math.h>
 #include "gtz.h"
 
-#define DEBUG
+//#define DEBUG
 #define WAY1
 //#define WAY2
+
+// control the function to generate the wav file from the decoding the results
+//#define GENERATE_WAV
 
 int tdiff,tdiff_final;
 
@@ -62,10 +65,7 @@ void task1_dtmfDetect() {
 		/* ========================= */
 #ifdef DEBUG
 		printf("_______________________The %d tone _______________________\n", n);
-		printf("_______________tdiff: %d  tdiff_final: %d_________________\n", tdiff, tdiff_final);
 #endif
-		tdiff = 0;
-		tdiff_final = 0;
 		for(i = 0; i < DTMF_NUM; i++){
 #ifdef DEBUG
 			printf("i: %d ; %d Hz: %d\n", i, dtmf_freqs[i], gtz_out[i]);
@@ -106,17 +106,18 @@ void task1_dtmfDetect() {
 #endif
 		/* result[n] = ... */
 		/* ========================= */
-#ifdef DEBUG
-		printf("%c\n", result[n]);
-#endif
+		printf("result[%d]: %c\n", n, result[n]);
+		printf("Every feedback cycles tdiff: %d \t Final feedforward cycles tdiff_final: %d\n", tdiff, tdiff_final);
+		printf("==================================================\n");
+		//init the value
 		flag = 0;
+		tdiff = 0;
+		tdiff_final = 0;
 	}
-#ifdef DEBUG
 	printf("\nDetection finished\n");
+#ifdef GENERATE_WAV
 	printf("Generating audio\n");
-#endif
 	task2_dtmfGenerate(result);
-#ifdef DEBUG
 	printf("Finished\n");
 #endif
 }
@@ -129,7 +130,10 @@ void task2_dtmfGenerate(char* keys)
 	int n_tones = 8;
 	int samples_per_tone = (int) (tone_length * fs);
 	int samples_total = samples_per_tone * n_tones;
-	int i, j, n;
+	int i, n;
+#ifdef WAY2
+	int j;
+#endif
 	int freq1 = 0,freq2 = 0;
 	int temp_volume = 0;
 	char digit;

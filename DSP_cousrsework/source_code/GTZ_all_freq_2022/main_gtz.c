@@ -27,6 +27,16 @@
 
 #define DEBUG
 
+// Compiler improvements
+#define COMPILER_IMPROVE
+// ========this three define cannot open at same time ========
+// ========Longest
+//#define ORIGIN
+// ========Fastest
+#define LOGIC_IMPROVE
+// ========The instruction sets could not improve the efficiency
+//#define INSTRUCTION_IMPROVE
+
 void clk_SWI_Read_Data(UArg arg0);
 void clk_SWI_GTZ_All_Freq(UArg arg0);
 
@@ -46,7 +56,7 @@ short *buffer;
  *  ======== main ========
  */
 int main() {
-	System_printf("\n System Start\n");
+	System_printf("\nSystem Start\n");
 	System_flush();
 
 	/* Read binary data file */
@@ -112,27 +122,53 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
    	static short delay_1[DTMF_NUM] = {0};
    	static short delay_2[DTMF_NUM] = {0};
 
+
    	int i;
-   	int prod1, prod2, prod3;
+   	int prod1 = 0, prod2 = 0, prod3 = 0;
 
 
 	/* TODO 1. Complete the feedback loop of the GTZ algorithm*/
 	/* ========================= */
-   	for(i = 0; i < DTMF_NUM; i++){
-   		prod1 = _dshr(((int) dtmf_coef[i] * (int) delay_1[i]), 15);
-   		delay[i] = (short) input + _dshl(prod1, 1) - delay_2[i];
-   		delay_2[i] = delay_1[i];
-   		delay_1[i] = delay[i];
-   	}
+#ifdef COMPILER_IMPROVE
+#pragma MUST_ITERATE(256,,2);
+#pragma UNROLL(4);
+#endif
 
+#ifdef ORIGIN
+   	for(i = 0; i < DTMF_NUM; i++){
+   		//dtmf_coef should >> 15 but * 2, we could let it >> 14
+   		delay[i] = input + ((dtmf_coef[i] * delay_1[i]) >> 15) * 2 - delay_2[i];
+		delay_2[i] = delay_1[i];
+		delay_1[i] = delay[i];
+   	}
+	N++;
+#endif
+
+#ifdef LOGIC_IMPROVE
+   	for(i = 0; i < DTMF_NUM; i++){
+   		//dtmf_coef should >> 15 but * 2, we could let it >> 14
+   		delay[i] = input + ((dtmf_coef[i] * delay_1[i]) >> 14) - delay_2[i];
+		delay_2[i] = delay_1[i];
+		delay_1[i] = delay[i];
+   	}
+	N++;
+#endif
+
+#ifdef INSTRUCTION_IMPROVE
+	for(i = 0; i < DTMF_NUM; i++){
+		//dtmf_coef should >> 15 but * 2, we could let it >> 14
+		delay[i] = _dsub(_dadd(input, _dshr((_mpy32ll(dtmf_coef[i], delay_1[i])), 14)),delay_2[i]);
+		delay_2[i] = delay_1[i];
+		delay_1[i] = delay[i];
+	}
+	N = _dadd(N, 1);
+#endif
 
 	/* ========================= */
-	N++;
-
 	//Record stop time
 	stop = Timestamp_get32();
 	//Record elapsed time
-	tdiff += stop-start;
+	tdiff = stop-start;
 
 	if (N == N_VAL) {
 	   	//Record start time
@@ -140,16 +176,42 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 
 		/* TODO 2. Complete the feedforward loop of the GTZ algorithm*/
 		/* ========================= */
+#ifdef COMPILER_IMPROVE
+#pragma MUST_ITERATE(256,,2);
+#pragma UNROLL(4);
+#endif
 		for(i = 0; i < DTMF_NUM; i++){
 
 			//production of the Goertzel value
-			prod1 = _dshr(((int) delay_1[i] * delay_1[i]), 8);
-			prod2 = _dshr(((int) delay_2[i] * delay_2[i]), 8);
-			prod3 = _dshl(_dshr((_dshr((int) delay_1[i] * delay_2[i], 8) * dtmf_coef[i]), 15), 1);
-
+#ifdef ORIGIN
+			prod1 = (int) (delay_1[i] * delay_1[i]) >> 8;
+			prod2 = (int) (delay_2[i] * delay_2[i]) >> 8;
+			prod3 = (int) ((((delay_1[i] * delay_2[i]) >> 8) * dtmf_coef[i]) >> 15) * 2;
 			//get Goertzel value
 			Goertzel_Value =  prod1 + prod2 - prod3;
+#endif
+
+#ifdef LOGIC_IMPROVE
+			prod1 = (int) (delay_1[i] * delay_1[i]) >> 8;
+			prod2 = (int) (delay_2[i] * delay_2[i]) >> 8;
+			//dtmf_coef should >> 15 but * 2, we could let it >> 14
+			prod3 = (int) (((delay_1[i] * delay_2[i]) >> 8) * dtmf_coef[i]) >> 14;
+			//get Goertzel value
+			Goertzel_Value =  prod1 + prod2 - prod3;
+#endif
+
+#ifdef INSTRUCTION_IMPROVE
+			prod1 = (int) _dshr(_mpy32ll(delay_1[i], delay_1[i]), 8);
+			prod2 = (int) _dshr(_mpy32ll(delay_2[i], delay_2[i]), 8);
+			//dtmf_coef should >> 15 but * 2, we could let it >> 14
+			prod3 = (int) _dshr(_mpy32ll(_dshr(_mpy32ll(delay_1[i],delay_2[i]), 8), dtmf_coef[i]), 14);
+			//get Goertzel value
+			Goertzel_Value =  _dsub(_dadd(prod1, prod2),prod3);
+#endif
+
+			//transfer results
 			gtz_out[i] = Goertzel_Value;
+			//init the delay value
 			delay[i] = delay_1[i] = delay_2[i] = 0;
 		}
 

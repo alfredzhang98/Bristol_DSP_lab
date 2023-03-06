@@ -1,6 +1,7 @@
 import math
 
-input = 0x6D02
+# coeff
+input = 0x68AD
 
 str_bin = (bin(input))
 str_bin =  str_bin [2:]

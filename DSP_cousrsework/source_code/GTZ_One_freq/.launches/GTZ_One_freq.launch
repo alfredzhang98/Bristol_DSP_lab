@@ -26,14 +26,14 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_6" value="GTZ_One_freq"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_7" value="GTZ_One_freq"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:GTZ_One_freq}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_1" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_2" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_3" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_4" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_5" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_6" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_7" value="E:/project\DSP_LAB\DSP_cousrsework\BB_source\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_1" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_2" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_3" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_4" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_5" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_6" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_7" value="E:/project\DSP_LAB\DSP_cousrsework\source_code\GTZ_One_freq\Debug\GTZ_One_freq.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/GTZ_One_freq"/>
 </listAttribute>

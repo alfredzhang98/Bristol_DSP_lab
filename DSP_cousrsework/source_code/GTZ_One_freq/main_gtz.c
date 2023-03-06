@@ -39,6 +39,10 @@ extern short coef[8];
 int N = 0;
 const int N_const = 206;
 
+// !!!!!!!! this two define cannot open at same time !!!!!!!!
+#define ORIGIN
+//#define INSTRUCTION_IMPROVE
+
 /*
  *  ======== main ========
  */
@@ -80,7 +84,13 @@ void clk_SWI_Generate_DTMF(UArg arg0)
 	tick = Clock_getTicks();
 //	sample = (int) 32768.0*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
 	sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
+#ifdef ORIGIN
+	sample = sample >> 12;
+#endif
+
+#ifdef INSTRUCTION_IMPROVE
 	sample = _dshr(sample,12);
+#endif
 }
 
 /*
@@ -102,23 +112,42 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
 
    	//we have several intermediates which need recursion
 	input = (short) sample;
-	prod1 = _dshr(((int) coef_1 * (int) delay_1), 15);
-	delay = input + _dshl(prod1, 1) - delay_2;
+
+#ifdef ORIGIN
+	delay = input + ((coef_1 * delay_1) >> 14) - delay_2;
 	delay_2 = delay_1;
 	delay_1 = delay;
 	N++;
+#endif
+
+#ifdef INSTRUCTION_IMPROVE
+	delay = _dsub(_dadd(input, _dshr((_mpy32ll(coef_1, delay_1)), 14)),delay_2);
+	delay_2 = delay_1;
+	delay_1 = delay;
+	N = _dadd(N, 1);
+#endif
 
 	//every 205 times get one result
 	if(N == N_const){
 		//production of the Goertzel value
-		prod1 = _dshr(((int) delay_1 * delay_1), 6);
-		prod2 = _dshr(((int) delay_2 * delay_2), 6);
-		prod3 = _dshl(_dshr((((int) delay_1 * delay_2 >> 6) * coef_1), 15), 1);
-
+#ifdef ORIGIN
+		prod1 = (int) (delay_1 * delay_1) >> 8;
+		prod2 = (int) (delay_2 * delay_2) >> 8;
+		prod3 = (int) ((((delay_1 * delay_2) >> 8) * coef_1) >> 15) * 2;
 		//get Goertzel value
 		Goertzel_Value =  prod1 + prod2 - prod3;
-		gtz_out[0] = Goertzel_Value;
 
+#endif
+
+#ifdef INSTRUCTION_IMPROVE
+		prod1 = (int) _dshr(_mpy32ll(delay_1, delay_1), 8);
+		prod2 = (int) _dshr(_mpy32ll(delay_2, delay_2), 8);
+		prod3 = (int) _dshr(_mpy32ll(_dshr(_mpy32ll(delay_1,delay_2), 8), coef_1), 14);
+		//get Goertzel value
+		Goertzel_Value =  _dsub(_dadd(prod1, prod2),prod3);
+#endif
+		//transfer results
+		gtz_out[0] = Goertzel_Value;
 		//Init the calculation
 		N=0;
 		flag = 1;

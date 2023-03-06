@@ -16,14 +16,14 @@ configPkg/: | configPkg/linker.cmd
 main_gtz.obj: ../main_gtz.c $(GEN_OPTS) $(GEN_HDRS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main_gtz.pp" $(GEN_OPTS__FLAG) "$<"
+	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --no_bad_aliases --debug_software_pipeline -k --preproc_with_compile --preproc_dependency="main_gtz.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 util.obj: ../util.c $(GEN_OPTS) $(GEN_HDRS)
 	@echo 'Building file: $<'
 	@echo 'Invoking: C6000 Compiler'
-	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="util.pp" $(GEN_OPTS__FLAG) "$<"
+	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O3 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --display_error_number --diag_warning=225 --diag_wrap=off --no_bad_aliases --debug_software_pipeline -k --preproc_with_compile --preproc_dependency="util.pp" $(GEN_OPTS__FLAG) "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
