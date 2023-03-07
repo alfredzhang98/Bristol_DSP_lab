@@ -111,9 +111,6 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 	// define feedback times as N
 	static int N = 0;
 
-   	//Record start time
-	start = Timestamp_get32();
-
 	static int Goertzel_Value = 0;
 	short input = (short) (sample);
 
@@ -122,10 +119,11 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
    	static short delay_1[DTMF_NUM] = {0};
    	static short delay_2[DTMF_NUM] = {0};
 
-
    	int i;
    	int prod1 = 0, prod2 = 0, prod3 = 0;
 
+   	//Record start time
+	start = Timestamp_get32();
 
 	/* TODO 1. Complete the feedback loop of the GTZ algorithm*/
 	/* ========================= */
@@ -220,6 +218,9 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 		/* ========================= */
 		flag = 1;
 		N = 0;
+//		memset(delay, 0, sizeof(delay));
+//		memset(delay_1, 0, sizeof(delay_1));
+//		memset(delay_2, 0, sizeof(delay_2));
 
 		//Record stop time
 		stop = Timestamp_get32();
