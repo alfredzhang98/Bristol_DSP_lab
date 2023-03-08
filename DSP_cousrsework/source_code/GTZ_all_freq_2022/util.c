@@ -22,7 +22,7 @@
 #include <math.h>
 #include "gtz.h"
 
-//#define DEBUG
+#define _DEBUG
 #define WAY1
 //#define WAY2
 
@@ -63,11 +63,11 @@ void task1_dtmfDetect() {
 		while (!flag) Task_sleep(210);
 		/* TODO 3. Complete code to detect the 8 digits based on the GTZ output */
 		/* ========================= */
-#ifdef DEBUG
+#ifdef _DEBUG
 		printf("_______________________The %d tone _______________________\n", n);
 #endif
 		for(i = 0; i < DTMF_NUM; i++){
-#ifdef DEBUG
+#ifdef _DEBUG
 			printf("i: %d ; %d Hz: %d\n", i, dtmf_freqs[i], gtz_out[i]);
 #endif
 
@@ -88,6 +88,7 @@ void task1_dtmfDetect() {
 		}
 #endif
 
+// The  threshold should be change to fit the algorithm, so this way is limatation, please use way1
 #ifdef WAY2
 		for(j = 0; j < DTMF_HALF_NUM; j++){
 			if(gtz_out[j] > THRESHOLD_POWER)
