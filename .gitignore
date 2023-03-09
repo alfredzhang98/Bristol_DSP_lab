@@ -1,2 +1,5 @@
 #ignore workstation
 workstation/*
+
+.DS_Store
+./*/.DS_Store

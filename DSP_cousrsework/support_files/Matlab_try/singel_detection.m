@@ -30,7 +30,10 @@ for freq=1:2000
 end
 
 stem(powers)
-
+title('770 Frquency signal detection')
+xlabel('Frquencies') 
+ylabel('Magnitude of power') 
+grid on
 
 
 
