@@ -39,17 +39,12 @@ extern short coef[8];
 int N = 0;
 const int N_const = 206;
 
-// !!!!!!!! this two define cannot open at same time !!!!!!!!
-#define ORIGIN
-//#define INSTRUCTION_IMPROVE
 
 /*
  *  ======== main ========
  */
 void main(void)
 {
-
-
 	System_printf("\n I am in main :\n");
 	System_flush();
 	/* Create a Clock Instance */
@@ -66,7 +61,7 @@ void main(void)
     /* Instantiate 8 parallel ISRs for each of the eight Goertzel coefficients */
 	Clock_create(clk_SWI_GTZ_0697Hz, TIMEOUT, &clkParams, NULL);
 
-	mag1 = 32768.0; mag2 = 32768.0; freq1 = 1633; // I am setting freq1 = 770Hz to test my GTZ algorithm with one frequency.
+	mag1 = 32768.0; mag2 = 32768.0; freq1 = 697; // I am setting freq1 = 770Hz to test my GTZ algorithm with one frequency.
 
 
 	/* Start SYS_BIOS */
@@ -84,13 +79,8 @@ void clk_SWI_Generate_DTMF(UArg arg0)
 	tick = Clock_getTicks();
 //	sample = (int) 32768.0*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
 	sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + 32768.0*sin(2.0*PI*freq2*TICK_PERIOD*tick);
-#ifdef ORIGIN
 	sample = sample >> 12;
-#endif
 
-#ifdef INSTRUCTION_IMPROVE
-	sample = _dshr(sample,12);
-#endif
 }
 
 /*
@@ -107,45 +97,25 @@ void clk_SWI_GTZ_0697Hz(UArg arg0)
    	static short delay_2 = 0;
 
    	static int Goertzel_Value = 0;
-   	short coef_1 = coef[7];
+   	short coef_1 = coef[0];
 
 
    	//we have several intermediates which need recursion
 	input = (short) sample;
 
-#ifdef ORIGIN
 	delay = input + ((coef_1 * delay_1) >> 14) - delay_2;
 	delay_2 = delay_1;
 	delay_1 = delay;
 	N++;
-#endif
-
-#ifdef INSTRUCTION_IMPROVE
-	delay = _dsub(_dadd(input, _dshr((_mpy32ll(coef_1, delay_1)), 14)),delay_2);
-	delay_2 = delay_1;
-	delay_1 = delay;
-	N = _dadd(N, 1);
-#endif
-
 	//every 205 times get one result
 	if(N == N_const){
 		//production of the Goertzel value
-#ifdef ORIGIN
-		prod1 = (int) (delay_1 * delay_1) >> 8;
-		prod2 = (int) (delay_2 * delay_2) >> 8;
-		prod3 = (int) ((((delay_1 * delay_2) >> 8) * coef_1) >> 15) * 2;
-		//get Goertzel value
-		Goertzel_Value =  prod1 + prod2 - prod3;
 
-#endif
-
-#ifdef INSTRUCTION_IMPROVE
-		prod1 = (int) _dshr(_mpy32ll(delay_1, delay_1), 8);
-		prod2 = (int) _dshr(_mpy32ll(delay_2, delay_2), 8);
-		prod3 = (int) _dshr(_mpy32ll(_dshr(_mpy32ll(delay_1,delay_2), 8), coef_1), 14);
+		prod1 = (int) (delay_1 * delay_1);
+		prod2 = (int) (delay_2 * delay_2);
+		prod3 = (int) delay_1 * ((delay_2 * coef_1) >> 14);
 		//get Goertzel value
-		Goertzel_Value =  _dsub(_dadd(prod1, prod2),prod3);
-#endif
+		Goertzel_Value =  (prod1 + prod2 - prod3) >> 8;
 		//transfer results
 		gtz_out[0] = Goertzel_Value;
 		//Init the calculation

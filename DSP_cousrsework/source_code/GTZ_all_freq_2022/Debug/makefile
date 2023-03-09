@@ -8,7 +8,8 @@ CG_TOOL_ROOT := D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
-"./util.obj" \
+$(S??_OBJS__QUOTED) \
+"util.obj" \
 "./main_gtz.obj" \
 -l"libc.a" \
 
@@ -107,6 +108,12 @@ endif
 -include ../makefile.defs
 
 # Add inputs and outputs from these tool invocations to the build variables 
+OBJS += \
+util.obj \
+
+OBJS__QUOTED += \
+"util.obj" \
+
 
 # All Target
 all: GTZ_all_freq_2022.out
@@ -115,15 +122,21 @@ all: GTZ_all_freq_2022.out
 GTZ_all_freq_2022.out: $(OBJS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C6000 Linker'
-	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O2 -g --display_error_number --diag_warning=225 --diag_wrap=off --no_bad_aliases -k -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" $(ORDERED_OBJS)
+	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O2 -g --program_level_compile --display_error_number --diag_warning=225 --diag_wrap=off --no_bad_aliases --debug_software_pipeline -k -z -m"GTZ_all_freq_2022.map" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/lib" -i"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GTZ_all_freq_2022_linkInfo.xml" --rom_model -o "GTZ_all_freq_2022.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
+	@echo ' '
+
+util.obj: $(C_SRCS) $(GEN_OPTS) $(GEN_HDRS)
+	@echo 'Invoking: C6000 Compiler'
+	"D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/bin/cl6x" -mv6600 --abi=eabi -O2 -g --include_path="D:/Software/CCS_5.5/ccsv5/tools/compiler/c6000_7.4.4/include" --program_level_compile --display_error_number --diag_warning=225 --diag_wrap=off --no_bad_aliases --debug_software_pipeline -k $(GEN_OPTS__FLAG) $(C_SRCS__QUOTED) $(S??_SRCS__QUOTED)
+	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(GEN_MISC_FILES__QUOTED)$(C6000_EXECUTABLE_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(GEN_OPTS__QUOTED)$(GEN_CMDS__QUOTED) "GTZ_all_freq_2022.out"
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "main_gtz.pp" "util.pp" 
+	-$(RM) "main_gtz.pp" 
 	-$(RM) "main_gtz.obj" "util.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '

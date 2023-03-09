@@ -29,11 +29,9 @@
 
 // Compiler improvements
 #define COMPILER_IMPROVE
-// ========this three define cannot open at same time ========
-// ========Longest
-//#define ORIGIN
+// ========this two define cannot open at same time ========
 // ========Fastest
-#define LOGIC_IMPROVE
+#define ORIGIN
 // ========The instruction sets could not improve the efficiency
 //#define INSTRUCTION_IMPROVE
 
@@ -138,15 +136,6 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 
 #ifdef ORIGIN
    	for(i = 0; i < DTMF_NUM; i++){
-   		delay[i] = input + ((dtmf_coef[i] * delay_1[i]) >> 15) * 2 - delay_2[i];
-		delay_2[i] = delay_1[i];
-		delay_1[i] = delay[i];
-   	}
-	N++;
-#endif
-
-#ifdef LOGIC_IMPROVE
-   	for(i = 0; i < DTMF_NUM; i++){
    		delay[i] = input + ((dtmf_coef[i] * delay_1[i]) >> 14) - delay_2[i];
 		delay_2[i] = delay_1[i];
 		delay_1[i] = delay[i];
@@ -156,7 +145,7 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 
 #ifdef INSTRUCTION_IMPROVE
 	for(i = 0; i < DTMF_NUM; i++){
-		delay[i] = _dsub(_dadd(input, _dshr((_mpy32ll(dtmf_coef[i], delay_1[i])), 14)),delay_2[i]);
+		delay[i] = input + _sshvr((_mpy(dtmf_coef[i], delay_1[i])), 14) - delay_2[i];
 		delay_2[i] = delay_1[i];
 		delay_1[i] = delay[i];
 	}
@@ -183,25 +172,21 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 
 			//production of the Goertzel value
 #ifdef ORIGIN
-			prod1 = (int) (delay_1[i] * delay_1[i]) >> 8;
-			prod2 = (int) (delay_2[i] * delay_2[i]) >> 8;
-			prod3 = (int) ((((delay_1[i] * delay_2[i]) >> 8) * dtmf_coef[i]) >> 15) * 2;
-#endif
-
-#ifdef LOGIC_IMPROVE
-			prod1 = (int) (delay_1[i] * delay_1[i]) >> 8;
-			prod2 = (int) (delay_2[i] * delay_2[i]) >> 8;
-			prod3 = (int) (((delay_1[i] * delay_2[i]) >> 8) * dtmf_coef[i]) >> 14;
+			prod1 = (int) (delay_1[i] * delay_1[i]);
+			prod2 = (int) (delay_2[i] * delay_2[i]);
+			prod3 = (int) delay_1[i] * ((delay_2[i] * dtmf_coef[i]) >> 14);
+			//get Goertzel value
+			Goertzel_Value =  prod1 + prod2 - prod3;
+//			Goertzel_Value =  Goertzel_Value >> 8;
 #endif
 
 #ifdef INSTRUCTION_IMPROVE
-			prod1 = (int) _sshvr(_mpy32ll(delay_1[i], delay_1[i]), 8);
-			prod2 = (int) _sshvr(_mpy32ll(delay_2[i], delay_2[i]), 8);
-			prod3 = (int) _sshvr(_mpy32ll(_dshr(_mpy32ll(delay_1[i],delay_2[i]), 8), dtmf_coef[i]), 14);
-#endif
-
+			prod1 = (int) _sshvr(_mpy(delay_1[i], delay_1[i]), 8);
+			prod2 = (int) _sshvr(_mpy(delay_2[i], delay_2[i]), 8);
+			prod3 = (int)_mpy(_sshvr(_mpy(delay_1[i],dtmf_coef[i]), 14), delay_2[i]);
 			//get Goertzel value
-			Goertzel_Value =  prod1 + prod2 - prod3;
+			Goertzel_Value =  _sshvr(prod1 + prod2 - prod3, 8);
+#endif
 			//transfer results
 			gtz_out[i] = Goertzel_Value;
 			//init the delay value

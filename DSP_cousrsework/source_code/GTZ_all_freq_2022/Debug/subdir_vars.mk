@@ -11,12 +11,10 @@ C_SRCS += \
 ../util.c 
 
 OBJS += \
-./main_gtz.obj \
-./util.obj 
+./main_gtz.obj 
 
 C_DEPS += \
-./main_gtz.pp \
-./util.pp 
+./main_gtz.pp 
 
 GEN_MISC_DIRS += \
 ./configPkg/ 
@@ -39,12 +37,10 @@ GEN_MISC_DIRS__QUOTED += \
 "configPkg\" 
 
 C_DEPS__QUOTED += \
-"main_gtz.pp" \
-"util.pp" 
+"main_gtz.pp" 
 
 OBJS__QUOTED += \
-"main_gtz.obj" \
-"util.obj" 
+"main_gtz.obj" 
 
 GEN_CMDS__FLAG += \
 -l"./configPkg/linker.cmd" 
@@ -53,7 +49,6 @@ GEN_OPTS__FLAG += \
 --cmd_file="./configPkg/compiler.opt" 
 
 C_SRCS__QUOTED += \
-"../main_gtz.c" \
 "../util.c" 
 
 
