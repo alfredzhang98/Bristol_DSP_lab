@@ -29,6 +29,7 @@
 
 // Compiler improvements
 #define COMPILER_IMPROVE
+#define MEMORY_IMPROVE
 // ========this two define cannot open at same time ========
 // ========Fastest
 #define ORIGIN
@@ -116,10 +117,12 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
    	static short delay_1[DTMF_NUM] = {0};
    	static short delay_2[DTMF_NUM] = {0};
 
+#ifdef MEMORY_IMPROVE
    	//Aligned the data
-    _nassert(((int) (delay) & 0x01) == 0);
-    _nassert(((int) (delay_1) & 0x01) == 0);
-    _nassert(((int) (delay_2) & 0x01) == 0);
+    _nassert(((int) (delay) & 0x03) == 0);
+    _nassert(((int) (delay_1) & 0x03) == 0);
+    _nassert(((int) (delay_2) & 0x03) == 0);
+#endif
 
    	int i;
    	int prod1 = 0, prod2 = 0, prod3 = 0;
@@ -145,7 +148,7 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 
 #ifdef INSTRUCTION_IMPROVE
 	for(i = 0; i < DTMF_NUM; i++){
-		delay[i] = input + _sshvr((_mpy(dtmf_coef[i], delay_1[i])), 14) - delay_2[i];
+		delay[i] =  _ssub(_sadd(input, _sshvr(_mpy(dtmf_coef[i], delay_1[i]), 14)), delay_2[i]);
 		delay_2[i] = delay_1[i];
 		delay_1[i] = delay[i];
 	}
@@ -176,16 +179,17 @@ void clk_SWI_GTZ_All_Freq(UArg arg0) {
 			prod2 = (int) (delay_2[i] * delay_2[i]);
 			prod3 = (int) delay_1[i] * ((delay_2[i] * dtmf_coef[i]) >> 14);
 			//get Goertzel value
-			Goertzel_Value =  prod1 + prod2 - prod3;
-//			Goertzel_Value =  Goertzel_Value >> 8;
+			//in order to improve the speed there is no need to ignore the low bit value, so we should only >> 8 to scale the result
+//			Goertzel_Value =  (prod1 + prod2 - prod3) >> 8;
+			Goertzel_Value =  (prod1 + prod2 - prod3);
 #endif
 
 #ifdef INSTRUCTION_IMPROVE
-			prod1 = (int) _sshvr(_mpy(delay_1[i], delay_1[i]), 8);
-			prod2 = (int) _sshvr(_mpy(delay_2[i], delay_2[i]), 8);
-			prod3 = (int)_mpy(_sshvr(_mpy(delay_1[i],dtmf_coef[i]), 14), delay_2[i]);
+			prod1 = (int) _mpy(delay_1[i], delay_1[i]);
+			prod2 = (int) _mpy(delay_2[i], delay_2[i]);
+			prod3 = (int) _mpy(_sshvr(_mpy(delay_1[i],dtmf_coef[i]), 14), delay_2[i]);
 			//get Goertzel value
-			Goertzel_Value =  _sshvr(prod1 + prod2 - prod3, 8);
+			Goertzel_Value =  _sshvr(_ssub(_sadd(prod1, prod2), prod3), 8);
 #endif
 			//transfer results
 			gtz_out[i] = Goertzel_Value;

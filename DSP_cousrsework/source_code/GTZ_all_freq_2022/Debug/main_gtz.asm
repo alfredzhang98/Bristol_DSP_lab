@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C6x C/C++ Codegen                                          PC v7.4.4 *
-;* Date/Time created: Thu Mar 09 20:13:50 2023                                *
+;* Date/Time created: Sat Mar 11 20:45:18 2023                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --c64p_l1d_workaround=off --endian=little --hll_source=on --long_precision_bits=32 --mem_model:code=near --mem_model:const=data --mem_model:data=far_aggregates --object_format=elf --silicon_version=6600 --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -195,7 +195,7 @@ $C$DW$35	.dwtag  DW_TAG_variable, DW_AT_name("sample")
 	.dwattr $C$DW$35, DW_AT_declaration
 	.dwattr $C$DW$35, DW_AT_external
 	.dwattr $C$DW$35, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$35, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$35, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$35, DW_AT_decl_column(0x0c)
 $C$DW$36	.dwtag  DW_TAG_variable, DW_AT_name("tdiff")
 	.dwattr $C$DW$36, DW_AT_TI_symbol_name("tdiff")
@@ -203,7 +203,7 @@ $C$DW$36	.dwtag  DW_TAG_variable, DW_AT_name("tdiff")
 	.dwattr $C$DW$36, DW_AT_declaration
 	.dwattr $C$DW$36, DW_AT_external
 	.dwattr $C$DW$36, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$36, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$36, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$36, DW_AT_decl_column(0x14)
 $C$DW$37	.dwtag  DW_TAG_variable, DW_AT_name("tdiff_final")
 	.dwattr $C$DW$37, DW_AT_TI_symbol_name("tdiff_final")
@@ -211,7 +211,7 @@ $C$DW$37	.dwtag  DW_TAG_variable, DW_AT_name("tdiff_final")
 	.dwattr $C$DW$37, DW_AT_declaration
 	.dwattr $C$DW$37, DW_AT_external
 	.dwattr $C$DW$37, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$37, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$37, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$37, DW_AT_decl_column(0x1b)
 $C$DW$38	.dwtag  DW_TAG_variable, DW_AT_name("gtz_out")
 	.dwattr $C$DW$38, DW_AT_TI_symbol_name("gtz_out")
@@ -219,7 +219,7 @@ $C$DW$38	.dwtag  DW_TAG_variable, DW_AT_name("gtz_out")
 	.dwattr $C$DW$38, DW_AT_declaration
 	.dwattr $C$DW$38, DW_AT_external
 	.dwattr $C$DW$38, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$38, DW_AT_decl_line(0x2d)
+	.dwattr $C$DW$38, DW_AT_decl_line(0x2e)
 	.dwattr $C$DW$38, DW_AT_decl_column(0x28)
 $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("flag")
 	.dwattr $C$DW$39, DW_AT_TI_symbol_name("flag")
@@ -227,7 +227,7 @@ $C$DW$39	.dwtag  DW_TAG_variable, DW_AT_name("flag")
 	.dwattr $C$DW$39, DW_AT_declaration
 	.dwattr $C$DW$39, DW_AT_external
 	.dwattr $C$DW$39, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$39, DW_AT_decl_line(0x2e)
+	.dwattr $C$DW$39, DW_AT_decl_line(0x2f)
 	.dwattr $C$DW$39, DW_AT_decl_column(0x0c)
 $C$DW$40	.dwtag  DW_TAG_variable, DW_AT_name("dtmf_coef")
 	.dwattr $C$DW$40, DW_AT_TI_symbol_name("dtmf_coef")
@@ -235,7 +235,7 @@ $C$DW$40	.dwtag  DW_TAG_variable, DW_AT_name("dtmf_coef")
 	.dwattr $C$DW$40, DW_AT_declaration
 	.dwattr $C$DW$40, DW_AT_external
 	.dwattr $C$DW$40, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$40, DW_AT_decl_line(0x30)
+	.dwattr $C$DW$40, DW_AT_decl_line(0x31)
 	.dwattr $C$DW$40, DW_AT_decl_column(0x0e)
 	.global	data
 data:	.usect	".far",3296,8
@@ -245,7 +245,7 @@ $C$DW$41	.dwtag  DW_TAG_variable, DW_AT_name("data")
 	.dwattr $C$DW$41, DW_AT_type(*$C$DW$T$971)
 	.dwattr $C$DW$41, DW_AT_external
 	.dwattr $C$DW$41, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$41, DW_AT_decl_line(0x31)
+	.dwattr $C$DW$41, DW_AT_decl_line(0x32)
 	.dwattr $C$DW$41, DW_AT_decl_column(0x07)
 	.global	buffer
 	.bss	buffer,4,4
@@ -255,7 +255,7 @@ $C$DW$42	.dwtag  DW_TAG_variable, DW_AT_name("buffer")
 	.dwattr $C$DW$42, DW_AT_type(*$C$DW$T$972)
 	.dwattr $C$DW$42, DW_AT_external
 	.dwattr $C$DW$42, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$42, DW_AT_decl_line(0x32)
+	.dwattr $C$DW$42, DW_AT_decl_line(0x33)
 	.dwattr $C$DW$42, DW_AT_decl_column(0x08)
 	.bss	start$2,4,4
 	.sect	".neardata", RW
@@ -287,7 +287,7 @@ delay_2$8:
 	.bits	0,16			; delay_2$8[0] @ 0
 	.space	14
 
-;	D:\Software\CCS_5.5\ccsv5\tools\compiler\c6000_7.4.4\bin\opt6x.exe C:\\Users\\ALFRED~1\\AppData\\Local\\Temp\\359002 C:\\Users\\ALFRED~1\\AppData\\Local\\Temp\\359004 
+;	D:\Software\CCS_5.5\ccsv5\tools\compiler\c6000_7.4.4\bin\opt6x.exe C:\\Users\\ALFRED~1\\AppData\\Local\\Temp\\309042 C:\\Users\\ALFRED~1\\AppData\\Local\\Temp\\309044 
 	.sect	".text"
 	.clink
 	.global	main
@@ -299,13 +299,13 @@ $C$DW$43	.dwtag  DW_TAG_subprogram, DW_AT_name("main")
 	.dwattr $C$DW$43, DW_AT_external
 	.dwattr $C$DW$43, DW_AT_type(*$C$DW$T$10)
 	.dwattr $C$DW$43, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$43, DW_AT_TI_begin_line(0x37)
+	.dwattr $C$DW$43, DW_AT_TI_begin_line(0x38)
 	.dwattr $C$DW$43, DW_AT_TI_begin_column(0x05)
 	.dwattr $C$DW$43, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$43, DW_AT_decl_line(0x37)
+	.dwattr $C$DW$43, DW_AT_decl_line(0x38)
 	.dwattr $C$DW$43, DW_AT_decl_column(0x05)
 	.dwattr $C$DW$43, DW_AT_TI_max_frame_size(0x48)
-	.dwpsn	file "../main_gtz.c",line 55,column 12,is_stmt,address main,isa 0
+	.dwpsn	file "../main_gtz.c",line 56,column 12,is_stmt,address main,isa 0
 
 	.dwfde $C$DW$CIE, main
 
@@ -333,10 +333,10 @@ main:
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 10
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B3,*SP--(72)      ; |55| 
+           STW     .D2T2   B3,*SP--(72)      ; |56| 
 	.dwcfi	cfa_offset, 72
 	.dwcfi	save_reg_to_mem, 19, 0
-           STW     .D2T1   A10,*+SP(68)      ; |55| 
+           STW     .D2T1   A10,*+SP(68)      ; |56| 
 	.dwcfi	save_reg_to_mem, 10, -4
 $C$DW$44	.dwtag  DW_TAG_variable, DW_AT_name("fp")
 	.dwattr $C$DW$44, DW_AT_TI_symbol_name("fp")
@@ -354,7 +354,7 @@ $C$DW$47	.dwtag  DW_TAG_variable, DW_AT_name("__args")
 	.dwattr $C$DW$47, DW_AT_TI_symbol_name("__args")
 	.dwattr $C$DW$47, DW_AT_type(*$C$DW$T$1778)
 	.dwattr $C$DW$47, DW_AT_location[DW_OP_breg31 56]
-	.dwpsn	file "../main_gtz.c",line 56,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 57,column 2,is_stmt,isa 0
            MVKL    .S2     $C$SL1+0,B4
            MVKH    .S2     $C$SL1+0,B4
 $C$DW$48	.dwtag  DW_TAG_TI_branch
@@ -363,19 +363,19 @@ $C$DW$48	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$48, DW_AT_TI_call
 
            CALLP   .S2     xdc_runtime_System_printf__E,B3
-||         STW     .D2T2   B4,*+SP(4)        ; |56| 
+||         STW     .D2T2   B4,*+SP(4)        ; |57| 
 
-$C$RL0:    ; CALL OCCURS {xdc_runtime_System_printf__E} {0}  ; |56| 
+$C$RL0:    ; CALL OCCURS {xdc_runtime_System_printf__E} {0}  ; |57| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 14
-	.dwpsn	file "../main_gtz.c",line 57,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 58,column 2,is_stmt,isa 0
 $C$DW$49	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$49, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$49, DW_AT_name("xdc_runtime_System_flush__E")
 	.dwattr $C$DW$49, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_System_flush__E,B3
-$C$RL1:    ; CALL OCCURS {xdc_runtime_System_flush__E} {0}  ; |57| 
-	.dwpsn	file "../main_gtz.c",line 60,column 8,is_stmt,isa 0
+$C$RL1:    ; CALL OCCURS {xdc_runtime_System_flush__E} {0}  ; |58| 
+	.dwpsn	file "../main_gtz.c",line 61,column 8,is_stmt,isa 0
            MVKL    .S2     $C$SL2+0,B4
 
            MVKL    .S1     $C$SL3+0,A4
@@ -389,34 +389,34 @@ $C$DW$50	.dwtag  DW_TAG_TI_branch
            CALLP   .S2     fopen,B3
 ||         MVKH    .S1     $C$SL3+0,A4
 
-$C$RL2:    ; CALL OCCURS {fopen} {0}         ; |60| 
+$C$RL2:    ; CALL OCCURS {fopen} {0}         ; |61| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 7
-           MV      .L1     A4,A0             ; |60| 
-	.dwpsn	file "../main_gtz.c",line 61,column 2,is_stmt,isa 0
-   [!A0]   BNOP    .S1     $C$L1,5           ; |61| 
-           ; BRANCHCC OCCURS {$C$L1}         ; |61| 
+           MV      .L1     A4,A0             ; |61| 
+	.dwpsn	file "../main_gtz.c",line 62,column 2,is_stmt,isa 0
+   [!A0]   BNOP    .S1     $C$L1,5           ; |62| 
+           ; BRANCHCC OCCURS {$C$L1}         ; |62| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 6
-	.dwpsn	file "../main_gtz.c",line 66,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 67,column 2,is_stmt,isa 0
 $C$DW$51	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$51, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$51, DW_AT_name("fread")
 	.dwattr $C$DW$51, DW_AT_TI_call
-           CALL    .S1     fread             ; |66| 
+           CALL    .S1     fread             ; |67| 
            MVKL    .S2     data,B5
            MVKH    .S2     data,B5
-           ADDKPC  .S2     $C$RL3,B3,0       ; |66| 
-           MV      .L1X    B5,A4             ; |66| 
+           ADDKPC  .S2     $C$RL3,B3,0       ; |67| 
+           MV      .L1X    B5,A4             ; |67| 
 
-           MVK     .L2     0x2,B4            ; |66| 
-||         MV      .S2X    A0,B6             ; |66| 
-||         MVK     .S1     0x670,A6          ; |66| 
+           MVK     .L2     0x2,B4            ; |67| 
+||         MV      .S2X    A0,B6             ; |67| 
+||         MVK     .S1     0x670,A6          ; |67| 
 
-$C$RL3:    ; CALL OCCURS {fread} {0}         ; |66| 
+$C$RL3:    ; CALL OCCURS {fread} {0}         ; |67| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 46
-	.dwpsn	file "../main_gtz.c",line 67,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 68,column 2,is_stmt,isa 0
            MVKL    .S1     0x27100,A4
 $C$DW$52	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$52, DW_AT_low_pc(0x00)
@@ -426,8 +426,8 @@ $C$DW$52	.dwtag  DW_TAG_TI_branch
            CALLP   .S2     malloc,B3
 ||         MVKH    .S1     0x27100,A4
 
-$C$RL4:    ; CALL OCCURS {malloc} {0}        ; |67| 
-           STW     .D2T1   A4,*+DP(buffer)   ; |67| 
+$C$RL4:    ; CALL OCCURS {malloc} {0}        ; |68| 
+           STW     .D2T1   A4,*+DP(buffer)   ; |68| 
 	.dwpsn	file "D:/Software/CCS_5.5/bios_6_35_04_50/packages/ti/sysbios/knl/Clock.h",line 645,column 9,is_stmt,isa 0
 $C$DW$53	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$53, DW_AT_low_pc(0x00)
@@ -441,12 +441,12 @@ $C$DW$53	.dwtag  DW_TAG_TI_branch
 ||         ADD     .L1X    12,SP,A4          ; |645| 
 
 $C$RL5:    ; CALL OCCURS {ti_sysbios_knl_Clock_Params__init__S} {0}  ; |645| 
-	.dwpsn	file "../main_gtz.c",line 74,column 2,is_stmt,isa 0
-           MVK     .L1     0x1,A10           ; |74| 
-           STW     .D2T1   A10,*+SP(32)      ; |74| 
 	.dwpsn	file "../main_gtz.c",line 75,column 2,is_stmt,isa 0
-           MVK     .L1     1,A3              ; |75| 
-           STH     .D2T1   A3,*+SP(28)       ; |75| 
+           MVK     .L1     0x1,A10           ; |75| 
+           STW     .D2T1   A10,*+SP(32)      ; |75| 
+	.dwpsn	file "../main_gtz.c",line 76,column 2,is_stmt,isa 0
+           MVK     .L1     1,A3              ; |76| 
+           STH     .D2T1   A3,*+SP(28)       ; |76| 
 	.dwpsn	file "D:/Software/CCS_5.5/bios_6_35_04_50/packages/ti/sysbios/knl/Clock.h",line 698,column 5,is_stmt,isa 0
            MVKL    .S2     clk_SWI_Read_Data,B4
            MVKH    .S2     clk_SWI_Read_Data,B4
@@ -489,55 +489,55 @@ $C$DW$55	.dwtag  DW_TAG_TI_branch
 ||         ZERO    .D2     B8                ; |700| 
 
 $C$RL7:    ; CALL OCCURS {ti_sysbios_knl_Clock_Object__create__S} {0}  ; |700| 
-	.dwpsn	file "../main_gtz.c",line 84,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 85,column 2,is_stmt,isa 0
 $C$DW$56	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$56, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$56, DW_AT_name("ti_sysbios_BIOS_start__E")
 	.dwattr $C$DW$56, DW_AT_TI_call
            CALLP   .S2     ti_sysbios_BIOS_start__E,B3
-$C$RL8:    ; CALL OCCURS {ti_sysbios_BIOS_start__E} {0}  ; |84| 
+$C$RL8:    ; CALL OCCURS {ti_sysbios_BIOS_start__E} {0}  ; |85| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 6
-	.dwpsn	file "../main_gtz.c",line 85,column 1,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 86,column 1,is_stmt,isa 0
 
-           BNOP    .S1     $C$L2,5           ; |85| 
-||         ZERO    .L1     A4                ; |85| 
+           BNOP    .S1     $C$L2,5           ; |86| 
+||         ZERO    .L1     A4                ; |86| 
 
-           ; BRANCH OCCURS {$C$L2}           ; |85| 
+           ; BRANCH OCCURS {$C$L2}           ; |86| 
 ;** --------------------------------------------------------------------------*
 $C$L1:    
 ;          EXCLUSIVE CPU CYCLES: 6
-	.dwpsn	file "../main_gtz.c",line 62,column 3,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 63,column 3,is_stmt,isa 0
 $C$DW$57	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$57, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$57, DW_AT_name("xdc_runtime_System_printf__E")
 	.dwattr $C$DW$57, DW_AT_TI_call
-           CALL    .S1     xdc_runtime_System_printf__E ; |62| 
+           CALL    .S1     xdc_runtime_System_printf__E ; |63| 
            MVKL    .S2     $C$SL4+0,B4
            MVKH    .S2     $C$SL4+0,B4
-           STW     .D2T2   B4,*+SP(4)        ; |62| 
-           ADDKPC  .S2     $C$RL9,B3,1       ; |62| 
-$C$RL9:    ; CALL OCCURS {xdc_runtime_System_printf__E} {0}  ; |62| 
+           STW     .D2T2   B4,*+SP(4)        ; |63| 
+           ADDKPC  .S2     $C$RL9,B3,1       ; |63| 
+$C$RL9:    ; CALL OCCURS {xdc_runtime_System_printf__E} {0}  ; |63| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 6
-	.dwpsn	file "../main_gtz.c",line 63,column 3,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 64,column 3,is_stmt,isa 0
 $C$DW$58	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$58, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$58, DW_AT_name("xdc_runtime_System_flush__E")
 	.dwattr $C$DW$58, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_System_flush__E,B3
-$C$RL10:   ; CALL OCCURS {xdc_runtime_System_flush__E} {0}  ; |63| 
+$C$RL10:   ; CALL OCCURS {xdc_runtime_System_flush__E} {0}  ; |64| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 1
-	.dwpsn	file "../main_gtz.c",line 64,column 3,is_stmt,isa 0
-           MVK     .L1     0x1,A4            ; |64| 
+	.dwpsn	file "../main_gtz.c",line 65,column 3,is_stmt,isa 0
+           MVK     .L1     0x1,A4            ; |65| 
 ;** --------------------------------------------------------------------------*
 $C$L2:    
 ;          EXCLUSIVE CPU CYCLES: 12
-	.dwpsn	file "../main_gtz.c",line 85,column 1,is_stmt,isa 0
-           LDW     .D2T1   *+SP(68),A10      ; |85| 
+	.dwpsn	file "../main_gtz.c",line 86,column 1,is_stmt,isa 0
+           LDW     .D2T1   *+SP(68),A10      ; |86| 
 	.dwcfi	restore_reg, 10
-           LDW     .D2T2   *++SP(72),B3      ; |85| 
+           LDW     .D2T2   *++SP(72),B3      ; |86| 
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 19
 	.dwcfi	cfa_offset, 0
@@ -545,10 +545,10 @@ $C$L2:
 $C$DW$59	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$59, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$59, DW_AT_TI_return
-           RETNOP  .S2     B3,5              ; |85| 
-           ; BRANCH OCCURS {B3}              ; |85| 
+           RETNOP  .S2     B3,5              ; |86| 
+           ; BRANCH OCCURS {B3}              ; |86| 
 	.dwattr $C$DW$43, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$43, DW_AT_TI_end_line(0x55)
+	.dwattr $C$DW$43, DW_AT_TI_end_line(0x56)
 	.dwattr $C$DW$43, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$43
@@ -563,13 +563,13 @@ $C$DW$60	.dwtag  DW_TAG_subprogram, DW_AT_name("clk_SWI_Read_Data")
 	.dwattr $C$DW$60, DW_AT_TI_symbol_name("clk_SWI_Read_Data")
 	.dwattr $C$DW$60, DW_AT_external
 	.dwattr $C$DW$60, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$60, DW_AT_TI_begin_line(0x5c)
+	.dwattr $C$DW$60, DW_AT_TI_begin_line(0x5d)
 	.dwattr $C$DW$60, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$60, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$60, DW_AT_decl_line(0x5c)
+	.dwattr $C$DW$60, DW_AT_decl_line(0x5d)
 	.dwattr $C$DW$60, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$60, DW_AT_TI_max_frame_size(0x08)
-	.dwpsn	file "../main_gtz.c",line 92,column 35,is_stmt,address clk_SWI_Read_Data,isa 0
+	.dwpsn	file "../main_gtz.c",line 93,column 35,is_stmt,address clk_SWI_Read_Data,isa 0
 
 	.dwfde $C$DW$CIE, clk_SWI_Read_Data
 $C$DW$61	.dwtag  DW_TAG_formal_parameter, DW_AT_name("arg0")
@@ -600,52 +600,52 @@ clk_SWI_Read_Data:
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 7
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B3,*SP--(8)       ; |92| 
+           STW     .D2T2   B3,*SP--(8)       ; |93| 
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 19, 0
 $C$DW$62	.dwtag  DW_TAG_variable, DW_AT_name("tick")
 	.dwattr $C$DW$62, DW_AT_TI_symbol_name("tick$1")
 	.dwattr $C$DW$62, DW_AT_type(*$C$DW$T$10)
 	.dwattr $C$DW$62, DW_AT_location[DW_OP_reg4]
-	.dwpsn	file "../main_gtz.c",line 94,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 95,column 2,is_stmt,isa 0
 $C$DW$63	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$63, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$63, DW_AT_name("ti_sysbios_knl_Clock_getTicks__E")
 	.dwattr $C$DW$63, DW_AT_TI_call
            CALLP   .S2     ti_sysbios_knl_Clock_getTicks__E,B3
-$C$RL11:   ; CALL OCCURS {ti_sysbios_knl_Clock_getTicks__E} {0}  ; |94| 
+$C$RL11:   ; CALL OCCURS {ti_sysbios_knl_Clock_getTicks__E} {0}  ; |95| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 37
-	.dwpsn	file "../main_gtz.c",line 95,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 96,column 2,is_stmt,isa 0
            MVKL    .S1     0x13e22cbd,A3
            MVKH    .S1     0x13e22cbd,A3
-           MPY32US .M1     A3,A4,A7:A6       ; |95| 
-           SHR     .S1     A4,31,A3          ; |95| 
-           MVK     .S2     1648,B4           ; |95| 
-           MVK     .S2     1648,B6           ; |95| 
-           SHR     .S1     A7,7,A5           ; |95| 
-           MPYLI   .M2X    B4,A3,B5:B4       ; |95| 
-           MPYLI   .M2X    B6,A5,B7:B6       ; |95| 
+           MPY32US .M1     A3,A4,A7:A6       ; |96| 
+           SHR     .S1     A4,31,A3          ; |96| 
+           MVK     .S2     1648,B4           ; |96| 
+           MVK     .S2     1648,B6           ; |96| 
+           SHR     .S1     A7,7,A5           ; |96| 
+           MPYLI   .M2X    B4,A3,B5:B4       ; |96| 
+           MPYLI   .M2X    B6,A5,B7:B6       ; |96| 
            NOP             3
-           SUB     .L2     B4,B6,B4          ; |95| 
-           ADD     .L2     B4,B4,B5          ; |95| 
+           SUB     .L2     B4,B6,B4          ; |96| 
+           ADD     .L2     B4,B4,B5          ; |96| 
            MVKL    .S2     data,B4
 
-           MV      .L1X    B5,A3             ; |95| Define a twin register
+           MV      .L1X    B5,A3             ; |96| Define a twin register
 ||         MVKH    .S2     data,B4
 
-           ADDAH   .D1     A3,A4,A3          ; |95| 
-           ADD     .L1X    B4,A3,A3          ; |95| 
-           LDH     .D1T1   *A3,A3            ; |95| 
+           ADDAH   .D1     A3,A4,A3          ; |96| 
+           ADD     .L1X    B4,A3,A3          ; |96| 
+           LDH     .D1T1   *A3,A3            ; |96| 
            NOP             4
 
-           SHR     .S1     A3,31,A5          ; |95| 
-||         MV      .L1     A3,A4             ; |95| 
+           SHR     .S1     A3,31,A5          ; |96| 
+||         MV      .L1     A3,A4             ; |96| 
 
-           DSHR    .S1     A5:A4,5,A5:A4     ; |95| 
-           STW     .D2T1   A4,*+DP(sample)   ; |95| 
-	.dwpsn	file "../main_gtz.c",line 97,column 1,is_stmt,isa 0
-           LDW     .D2T2   *++SP(8),B3       ; |97| 
+           DSHR    .S1     A5:A4,5,A5:A4     ; |96| 
+           STW     .D2T1   A4,*+DP(sample)   ; |96| 
+	.dwpsn	file "../main_gtz.c",line 98,column 1,is_stmt,isa 0
+           LDW     .D2T2   *++SP(8),B3       ; |98| 
            NOP             4
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 19
@@ -653,10 +653,10 @@ $C$RL11:   ; CALL OCCURS {ti_sysbios_knl_Clock_getTicks__E} {0}  ; |94|
 $C$DW$64	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$64, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$64, DW_AT_TI_return
-           RETNOP  .S2     B3,5              ; |97| 
-           ; BRANCH OCCURS {B3}              ; |97| 
+           RETNOP  .S2     B3,5              ; |98| 
+           ; BRANCH OCCURS {B3}              ; |98| 
 	.dwattr $C$DW$60, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$60, DW_AT_TI_end_line(0x61)
+	.dwattr $C$DW$60, DW_AT_TI_end_line(0x62)
 	.dwattr $C$DW$60, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$60
@@ -671,13 +671,13 @@ $C$DW$65	.dwtag  DW_TAG_subprogram, DW_AT_name("clk_SWI_GTZ_All_Freq")
 	.dwattr $C$DW$65, DW_AT_TI_symbol_name("clk_SWI_GTZ_All_Freq")
 	.dwattr $C$DW$65, DW_AT_external
 	.dwattr $C$DW$65, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$65, DW_AT_TI_begin_line(0x68)
+	.dwattr $C$DW$65, DW_AT_TI_begin_line(0x69)
 	.dwattr $C$DW$65, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$65, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$65, DW_AT_decl_line(0x68)
+	.dwattr $C$DW$65, DW_AT_decl_line(0x69)
 	.dwattr $C$DW$65, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$65, DW_AT_TI_max_frame_size(0x20)
-	.dwpsn	file "../main_gtz.c",line 104,column 38,is_stmt,address clk_SWI_GTZ_All_Freq,isa 0
+	.dwpsn	file "../main_gtz.c",line 105,column 38,is_stmt,address clk_SWI_GTZ_All_Freq,isa 0
 
 	.dwfde $C$DW$CIE, clk_SWI_GTZ_All_Freq
 $C$DW$66	.dwtag  DW_TAG_variable, DW_AT_name("start")
@@ -734,16 +734,16 @@ clk_SWI_GTZ_All_Freq:
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 11
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B11,*SP--(8)      ; |104| 
+           STW     .D2T2   B11,*SP--(8)      ; |105| 
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 27, 0
-           STW     .D2T2   B10,*SP--(8)      ; |104| 
+           STW     .D2T2   B10,*SP--(8)      ; |105| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	save_reg_to_mem, 26, -8
-           STW     .D2T2   B3,*SP--(8)       ; |104| 
+           STW     .D2T2   B3,*SP--(8)       ; |105| 
 	.dwcfi	cfa_offset, 24
 	.dwcfi	save_reg_to_mem, 19, -16
-           STDW    .D2T1   A11:A10,*SP--     ; |104| 
+           STDW    .D2T1   A11:A10,*SP--     ; |105| 
 	.dwcfi	cfa_offset, 32
 	.dwcfi	save_reg_to_mem, 11, -20
 	.dwcfi	save_reg_to_mem, 10, -24
@@ -759,37 +759,37 @@ $C$DW$75	.dwtag  DW_TAG_variable, DW_AT_name("stop")
 	.dwattr $C$DW$75, DW_AT_TI_symbol_name("stop$3")
 	.dwattr $C$DW$75, DW_AT_type(*$C$DW$T$10)
 	.dwattr $C$DW$75, DW_AT_location[DW_OP_reg4]
-	.dwpsn	file "../main_gtz.c",line 112,column 8,is_stmt,isa 0
-           LDH     .D2T1   *+DP(sample),A10  ; |112| 
-	.dwpsn	file "../main_gtz.c",line 128,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 113,column 8,is_stmt,isa 0
+           LDH     .D2T1   *+DP(sample),A10  ; |113| 
+	.dwpsn	file "../main_gtz.c",line 131,column 2,is_stmt,isa 0
 $C$DW$76	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$76, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$76, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$76, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL12:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |128| 
+$C$RL12:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |131| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 3
 
            PACK2   .L1     A10,A10,A20
-||         STW     .D2T1   A4,*+DP(start$2)  ; |128| 
+||         STW     .D2T1   A4,*+DP(start$2)  ; |131| 
 
-	.dwpsn	file "../main_gtz.c",line 138,column 16,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 141,column 16,is_stmt,isa 0
 
            MVKL    .S1     delay_1$7,A10
 ||         MVKL    .S2     dtmf_coef,B10
 
            MVKH    .S1     delay_1$7,A10
 ||         MVKH    .S2     dtmf_coef,B10
-||         MVK     .L2     1,B4              ; |138| 
+||         MVK     .L2     1,B4              ; |141| 
 
 ;*----------------------------------------------------------------------------*
 ;*   SOFTWARE PIPELINE INFORMATION
 ;*
 ;*      Loop found in file               : ../main_gtz.c
-;*      Loop source line                 : 138
-;*      Loop opening brace source line   : 138
-;*      Loop closing brace source line   : 142
+;*      Loop source line                 : 141
+;*      Loop opening brace source line   : 141
+;*      Loop closing brace source line   : 145
 ;*      Loop Unroll Multiple             : 4x
 ;*      Known Minimum Trip Count         : 2                    
 ;*      Known Maximum Trip Count         : 2                    
@@ -858,33 +858,33 @@ $C$RL12:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |128|
 ;*        SINGLE SCHEDULED ITERATION
 ;*
 ;*        $C$C73:
-;*   0              LDDW    .D2T2   *B19++,B5:B4      ; |139| 
-;*   1              LDDW    .D2T2   *B18++,B7:B6      ; |139| 
-;*     ||           LDDW    .D1T1   *A19++,A7:A6      ; |140| 
+;*   0              LDDW    .D2T2   *B19++,B5:B4      ; |142| 
+;*   1              LDDW    .D2T2   *B18++,B7:B6      ; |142| 
+;*     ||           LDDW    .D1T1   *A19++,A7:A6      ; |143| 
 ;*   2              NOP             4
-;*   6              MPY2    .M2     B4,B6,B7:B6       ; |139| 
-;*     ||           MPY2    .M1X    B5,A7,A7:A6       ; |139| 
-;*     ||           MV      .S2X    A6,B4             ; |140| 
-;*   7              MV      .L2     B7,B5             ; |140| 
-;*   8              LDDW    .D1T1   *A3++,A5:A4       ; |139| 
-;*     ||           STDW    .D2T2   B5:B4,*B8++       ; |140| 
+;*   6              MPY2    .M2     B4,B6,B7:B6       ; |142| 
+;*     ||           MPY2    .M1X    B5,A7,A7:A6       ; |142| 
+;*     ||           MV      .S2X    A6,B4             ; |143| 
+;*   7              MV      .L2     B7,B5             ; |143| 
+;*   8              LDDW    .D1T1   *A3++,A5:A4       ; |142| 
+;*     ||           STDW    .D2T2   B5:B4,*B8++       ; |143| 
 ;*   9              NOP             1
-;*  10              DSHR    .S2     B7:B6,14,B17:B16  ; |139| 
-;*     ||           DSHR    .S1     A7:A6,14,A9:A8    ; |139| 
-;*  11              PACK2   .L2     B17,B16,B5        ; |139| 
-;*     ||           PACK2   .L1     A9,A8,A6          ; |139| 
-;*  12              ADD2    .S2X    B5,A20,B6         ; |139| 
-;*     ||           ADD2    .L1     A6,A20,A6         ; |139| 
-;*  13              SUB2    .L2X    B6,A4,B4          ; |139| 
-;*     ||           SUB2    .L1     A6,A5,A4          ; |139| 
-;*  14              STW     .D2T2   B4,*B9++(8)       ; |139| 
-;*     ||           STW     .D1T1   A4,*A17++(8)      ; |139| 
-;*  15              LDDW    .D1T1   *A16++,A5:A4      ; |141| 
+;*  10              DSHR    .S2     B7:B6,14,B17:B16  ; |142| 
+;*     ||           DSHR    .S1     A7:A6,14,A9:A8    ; |142| 
+;*  11              PACK2   .L2     B17,B16,B5        ; |142| 
+;*     ||           PACK2   .L1     A9,A8,A6          ; |142| 
+;*  12              ADD2    .S2X    B5,A20,B6         ; |142| 
+;*     ||           ADD2    .L1     A6,A20,A6         ; |142| 
+;*  13              SUB2    .L2X    B6,A4,B4          ; |142| 
+;*     ||           SUB2    .L1     A6,A5,A4          ; |142| 
+;*  14              STW     .D2T2   B4,*B9++(8)       ; |142| 
+;*     ||           STW     .D1T1   A4,*A17++(8)      ; |142| 
+;*  15              LDDW    .D1T1   *A16++,A5:A4      ; |144| 
 ;*  16              NOP             6
-;*  22              STDW    .D1T1   A5:A4,*A18++      ; |141| 
+;*  22              STDW    .D1T1   A5:A4,*A18++      ; |144| 
 ;*     ||           SPBR            $C$C73
 ;*  23              NOP             2
-;*  25              ; BRANCHCC OCCURS {$C$C73}        ; |138| 
+;*  25              ; BRANCHCC OCCURS {$C$C73}        ; |141| 
 ;*----------------------------------------------------------------------------*
 $C$L3:    ; PIPED LOOP PROLOG
 ;          EXCLUSIVE CPU CYCLES: 21
@@ -901,10 +901,10 @@ $C$DW$L$clk_SWI_GTZ_All_Freq$4$B:
            SPMASK          L1,L2
 ||         MV      .L1     A10,A19
 ||         MV      .L2X    A10,B18
-||         LDDW    .D2T2   *B19++,B5:B4      ; |139| (P) <0,0> 
+||         LDDW    .D2T2   *B19++,B5:B4      ; |142| (P) <0,0> 
 
-           LDDW    .D2T2   *B18++,B7:B6      ; |139| (P) <0,1> 
-||         LDDW    .D1T1   *A19++,A7:A6      ; |140| (P) <0,1> 
+           LDDW    .D2T2   *B18++,B7:B6      ; |142| (P) <0,1> 
+||         LDDW    .D1T1   *A19++,A7:A6      ; |143| (P) <0,1> 
 
            NOP             2
 
@@ -914,45 +914,45 @@ $C$DW$L$clk_SWI_GTZ_All_Freq$4$B:
            SPMASK          S2
 ||         MVKH    .S2     delay_2$8,B11
 
-           MV      .S2X    A6,B4             ; |140| (P) <0,6> 
-||         MPY2    .M1X    B5,A7,A7:A6       ; |139| (P) <0,6> 
-||         MPY2    .M2     B4,B6,B7:B6       ; |139| (P) <0,6> 
+           MV      .S2X    A6,B4             ; |143| (P) <0,6> 
+||         MPY2    .M1X    B5,A7,A7:A6       ; |142| (P) <0,6> 
+||         MPY2    .M2     B4,B6,B7:B6       ; |142| (P) <0,6> 
 
            SPMASK          L1,S1,S2
 ||         MVKL    .S1     delay$6,A11
 ||         MV      .S2     B11,B8
 ||         MV      .L1X    B11,A3
-||         MV      .L2     B7,B5             ; |140| (P) <0,7> 
+||         MV      .L2     B7,B5             ; |143| (P) <0,7> 
 
            SPMASK          S1
 ||         MVKH    .S1     delay$6,A11
-||         STDW    .D2T2   B5:B4,*B8++       ; |140| (P) <0,8> 
-||         LDDW    .D1T1   *A3++,A5:A4       ; |139| (P) <0,8> 
+||         STDW    .D2T2   B5:B4,*B8++       ; |143| (P) <0,8> 
+||         LDDW    .D1T1   *A3++,A5:A4       ; |142| (P) <0,8> 
 
            NOP             1
 
            SPMASK          L2
 ||         MV      .L2X    A11,B9
-||         DSHR    .S1     A7:A6,14,A9:A8    ; |139| (P) <0,10> 
-||         DSHR    .S2     B7:B6,14,B17:B16  ; |139| (P) <0,10> 
+||         DSHR    .S1     A7:A6,14,A9:A8    ; |142| (P) <0,10> 
+||         DSHR    .S2     B7:B6,14,B17:B16  ; |142| (P) <0,10> 
 
-           PACK2   .L2     B17,B16,B5        ; |139| (P) <0,11> 
-||         PACK2   .L1     A9,A8,A6          ; |139| (P) <0,11> 
+           PACK2   .L2     B17,B16,B5        ; |142| (P) <0,11> 
+||         PACK2   .L1     A9,A8,A6          ; |142| (P) <0,11> 
 
-           ADD2    .L1     A6,A20,A6         ; |139| (P) <0,12> 
-||         ADD2    .S2X    B5,A20,B6         ; |139| (P) <0,12> 
+           ADD2    .L1     A6,A20,A6         ; |142| (P) <0,12> 
+||         ADD2    .S2X    B5,A20,B6         ; |142| (P) <0,12> 
 
            SPMASK          S1
 ||         ADD     .S1     4,A11,A17
-||         SUB2    .L1     A6,A5,A4          ; |139| (P) <0,13> 
-||         SUB2    .L2X    B6,A4,B4          ; |139| (P) <0,13> 
+||         SUB2    .L1     A6,A5,A4          ; |142| (P) <0,13> 
+||         SUB2    .L2X    B6,A4,B4          ; |142| (P) <0,13> 
 
            SPMASK          L1
 ||         MV      .L1     A11,A16
-||         STW     .D1T1   A4,*A17++(8)      ; |139| (P) <0,14> 
-||         STW     .D2T2   B4,*B9++(8)       ; |139| (P) <0,14> 
+||         STW     .D1T1   A4,*A17++(8)      ; |142| (P) <0,14> 
+||         STW     .D2T2   B4,*B9++(8)       ; |142| (P) <0,14> 
 
-           LDDW    .D1T1   *A16++,A5:A4      ; |141| (P) <0,15> 
+           LDDW    .D1T1   *A16++,A5:A4      ; |144| (P) <0,15> 
            NOP             3
 
            SPMASK          L1
@@ -962,7 +962,7 @@ $C$DW$L$clk_SWI_GTZ_All_Freq$4$B:
            NOP             1
 
            SPKERNEL 3,0
-||         STDW    .D1T1   A5:A4,*A18++      ; |141| <0,22> 
+||         STDW    .D1T1   A5:A4,*A18++      ; |144| <0,22> 
 
 $C$DW$L$clk_SWI_GTZ_All_Freq$4$E:
 ;** --------------------------------------------------------------------------*
@@ -971,58 +971,58 @@ $C$L5:    ; PIPED LOOP EPILOG
            NOP             3
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 13
-	.dwpsn	file "../main_gtz.c",line 143,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$4),B4      ; |143| 
+	.dwpsn	file "../main_gtz.c",line 146,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$4),B4      ; |146| 
            NOP             4
-           ADD     .L2     1,B4,B4           ; |143| 
-           STW     .D2T2   B4,*+DP(N$4)      ; |143| 
-	.dwpsn	file "../main_gtz.c",line 157,column 2,is_stmt,isa 0
+           ADD     .L2     1,B4,B4           ; |146| 
+           STW     .D2T2   B4,*+DP(N$4)      ; |146| 
+	.dwpsn	file "../main_gtz.c",line 160,column 2,is_stmt,isa 0
 $C$DW$77	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$77, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$77, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$77, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL13:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |157| 
+$C$RL13:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |160| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 19
-	.dwpsn	file "../main_gtz.c",line 159,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start$2),B4  ; |159| 
+	.dwpsn	file "../main_gtz.c",line 162,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start$2),B4  ; |162| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |159| 
-           STW     .D2T2   B4,*+DP(tdiff)    ; |159| 
-	.dwpsn	file "../main_gtz.c",line 161,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$4),B4      ; |161| 
-           MVK     .S2     206,B5            ; |161| 
+           SUB     .L2X    A4,B4,B4          ; |162| 
+           STW     .D2T2   B4,*+DP(tdiff)    ; |162| 
+	.dwpsn	file "../main_gtz.c",line 164,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$4),B4      ; |164| 
+           MVK     .S2     206,B5            ; |164| 
            NOP             3
-           CMPEQ   .L2     B4,B5,B0          ; |161| 
-   [!B0]   BNOP    .S1     $C$L9,5           ; |161| 
-           ; BRANCHCC OCCURS {$C$L9}         ; |161| 
+           CMPEQ   .L2     B4,B5,B0          ; |164| 
+   [!B0]   BNOP    .S1     $C$L9,5           ; |164| 
+           ; BRANCHCC OCCURS {$C$L9}         ; |164| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 6
-	.dwpsn	file "../main_gtz.c",line 163,column 3,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 166,column 3,is_stmt,isa 0
 $C$DW$78	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$78, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$78, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$78, DW_AT_TI_call
-           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |163| 
-           ADDKPC  .S2     $C$RL14,B3,4      ; |163| 
-$C$RL14:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |163| 
+           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |166| 
+           ADDKPC  .S2     $C$RL14,B3,4      ; |166| 
+$C$RL14:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |166| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 2
 
            ZERO    .L2     B17
-||         STW     .D2T1   A4,*+DP(start$2)  ; |163| 
+||         STW     .D2T1   A4,*+DP(start$2)  ; |166| 
 ||         ZERO    .S2     B16
 
-	.dwpsn	file "../main_gtz.c",line 171,column 14,is_stmt,isa 0
-           MVK     .L2     1,B4              ; |171| 
+	.dwpsn	file "../main_gtz.c",line 174,column 14,is_stmt,isa 0
+           MVK     .L2     1,B4              ; |174| 
 ;*----------------------------------------------------------------------------*
 ;*   SOFTWARE PIPELINE INFORMATION
 ;*
 ;*      Loop found in file               : ../main_gtz.c
-;*      Loop source line                 : 171
-;*      Loop opening brace source line   : 171
-;*      Loop closing brace source line   : 194
+;*      Loop source line                 : 174
+;*      Loop opening brace source line   : 174
+;*      Loop closing brace source line   : 198
 ;*      Loop Unroll Multiple             : 4x
 ;*      Known Minimum Trip Count         : 2                    
 ;*      Known Maximum Trip Count         : 2                    
@@ -1096,51 +1096,51 @@ $C$RL14:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |163|
 ;*        SINGLE SCHEDULED ITERATION
 ;*
 ;*        $C$C47:
-;*   0              LDDW    .D2T2   *B28++,B23:B22    ; |179| 
-;*     ||           LDDW    .D1T1   *A24++,A7:A6      ; |179| 
+;*   0              LDDW    .D2T2   *B28++,B23:B22    ; |184| 
+;*     ||           LDDW    .D1T1   *A24++,A7:A6      ; |184| 
 ;*   1              NOP             1
-;*   2              LDDW    .D2T2   *B29++,B5:B4      ; |179| 
+;*   2              LDDW    .D2T2   *B29++,B5:B4      ; |184| 
 ;*   3              NOP             2
-;*   5              MPY2    .M2X    B22,A6,B7:B6      ; |179| 
-;*     ||           MPY2    .M1X    B23,A7,A5:A4      ; |179| 
+;*   5              MPY2    .M2X    B22,A6,B7:B6      ; |184| 
+;*     ||           MPY2    .M1X    B23,A7,A5:A4      ; |184| 
 ;*   6              NOP             1
-;*   7              UNPKH2  .L1X    B22,A17:A16       ; |179| 
-;*     ||           SHR     .S2     B5,16,B8          ; |179| 
-;*   8              DADD    .L1X    0,B5:B4,A21:A20   ; |179| Define a twin register
-;*     ||           UNPKH2  .L2     B5,B19:B18        ; |179| 
-;*   9              UNPKH2  .L1     A20,A5:A4         ; |179| 
-;*     ||           DSHR    .S2     B7:B6,14,B7:B6    ; |179| 
-;*     ||           UNPKH2  .L2     B23,B21:B20       ; |179| 
-;*     ||           DSHR    .S1     A5:A4,14,A9:A8    ; |179| 
-;*  10              DPACKL2 .L1     A17:A16,A5:A4,A17:A16 ; |179| 
-;*     ||           EXT     .S1     A20,16,16,A21     ; |179| 
-;*     ||           DPACKL2 .L2     B21:B20,B19:B18,B21:B20 ; |179| 
-;*     ||           EXT     .S2     B5,16,16,B9       ; |179| 
-;*  11              DADD    .L1X    0,B7:B6,A7:A6     ; |179| Define a twin register
-;*     ||           SHR     .S1     A20,16,A28        ; |179| 
-;*     ||           DOTP2   .M1     A17,A17,A26       ; |179| 
-;*     ||           DOTP2   .M2     B20,B20,B24       ; |179| 
-;*     ||           MV      .L2     B8,B18            ; |179| Split a long life
-;*  12              DOTP2   .M1     A16,A16,A27       ; |179| 
-;*     ||           DOTP2   .M2     B21,B21,B19       ; |179| 
-;*  13              MPYLI   .M1     A21,A6,A5:A4      ; |179| 
-;*     ||           MPYLI   .M2X    B18,A9,B7:B6      ; |179| 
-;*  14              MPYLI   .M1     A28,A7,A5:A4      ; |179| 
-;*     ||           MPYLI   .M2X    B9,A8,B7:B6       ; |179| 
+;*   7              UNPKH2  .L1X    B22,A17:A16       ; |184| 
+;*     ||           SHR     .S2     B5,16,B8          ; |184| 
+;*   8              DADD    .L1X    0,B5:B4,A21:A20   ; |184| Define a twin register
+;*     ||           UNPKH2  .L2     B5,B19:B18        ; |184| 
+;*   9              UNPKH2  .L1     A20,A5:A4         ; |184| 
+;*     ||           DSHR    .S2     B7:B6,14,B7:B6    ; |184| 
+;*     ||           UNPKH2  .L2     B23,B21:B20       ; |184| 
+;*     ||           DSHR    .S1     A5:A4,14,A9:A8    ; |184| 
+;*  10              DPACKL2 .L1     A17:A16,A5:A4,A17:A16 ; |184| 
+;*     ||           EXT     .S1     A20,16,16,A21     ; |184| 
+;*     ||           DPACKL2 .L2     B21:B20,B19:B18,B21:B20 ; |184| 
+;*     ||           EXT     .S2     B5,16,16,B9       ; |184| 
+;*  11              DADD    .L1X    0,B7:B6,A7:A6     ; |184| Define a twin register
+;*     ||           SHR     .S1     A20,16,A28        ; |184| 
+;*     ||           DOTP2   .M1     A17,A17,A26       ; |184| 
+;*     ||           DOTP2   .M2     B20,B20,B24       ; |184| 
+;*     ||           MV      .L2     B8,B18            ; |184| Split a long life
+;*  12              DOTP2   .M1     A16,A16,A27       ; |184| 
+;*     ||           DOTP2   .M2     B21,B21,B19       ; |184| 
+;*  13              MPYLI   .M1     A21,A6,A5:A4      ; |184| 
+;*     ||           MPYLI   .M2X    B18,A9,B7:B6      ; |184| 
+;*  14              MPYLI   .M1     A28,A7,A5:A4      ; |184| 
+;*     ||           MPYLI   .M2X    B9,A8,B7:B6       ; |184| 
 ;*  15              NOP             1
-;*  16              STDW    .D2T2   B17:B16,*B25++    ; |193| 
-;*     ||           STDW    .D1T1   A19:A18,*A23++    ; |193| 
-;*  17              SUB     .S1     A27,A4,A20        ; |179| 
-;*     ||           STDW    .D1T1   A19:A18,*A3++     ; |193| 
-;*     ||           SUB     .L2     B19,B6,B19        ; |179| 
-;*  18              STW     .D1T1   A20,*A25++(16)    ; |179| 
-;*     ||           SUB     .S1     A26,A4,A6         ; |179| 
-;*     ||           SUB     .S2     B24,B6,B4         ; |179| 
-;*     ||           STW     .D2T2   B19,*B26++(16)    ; |191| 
-;*  19              STW     .D1T1   A6,*A22++(16)     ; |179| 
-;*     ||           STW     .D2T2   B4,*B27++(16)     ; |179| 
+;*  16              STDW    .D2T2   B17:B16,*B25++    ; |197| 
+;*     ||           STDW    .D1T1   A19:A18,*A23++    ; |197| 
+;*  17              SUB     .S1     A27,A4,A20        ; |184| 
+;*     ||           STDW    .D1T1   A19:A18,*A3++     ; |197| 
+;*     ||           SUB     .L2     B19,B6,B19        ; |184| 
+;*  18              STW     .D1T1   A20,*A25++(16)    ; |184| 
+;*     ||           SUB     .S1     A26,A4,A6         ; |184| 
+;*     ||           SUB     .S2     B24,B6,B4         ; |184| 
+;*     ||           STW     .D2T2   B19,*B26++(16)    ; |195| 
+;*  19              STW     .D1T1   A6,*A22++(16)     ; |184| 
+;*     ||           STW     .D2T2   B4,*B27++(16)     ; |184| 
 ;*     ||           SPBR            $C$C47
-;*  20              ; BRANCHCC OCCURS {$C$C47}        ; |171| 
+;*  20              ; BRANCHCC OCCURS {$C$C47}        ; |174| 
 ;*----------------------------------------------------------------------------*
 $C$L6:    ; PIPED LOOP PROLOG
 ;          EXCLUSIVE CPU CYCLES: 16
@@ -1155,89 +1155,89 @@ $C$L7:    ; PIPED LOOP KERNEL
 $C$DW$L$clk_SWI_GTZ_All_Freq$11$B:
 ;          EXCLUSIVE CPU CYCLES: 5
 
-           LDDW    .D2T2   *B28++,B23:B22    ; |179| (P) <0,0> 
-||         LDDW    .D1T1   *A24++,A7:A6      ; |179| (P) <0,0> 
+           LDDW    .D2T2   *B28++,B23:B22    ; |184| (P) <0,0> 
+||         LDDW    .D1T1   *A24++,A7:A6      ; |184| (P) <0,0> 
 
            SPMASK          L2
 ||         MV      .L2X    A10,B29
 
-           LDDW    .D2T2   *B29++,B5:B4      ; |179| (P) <0,2> 
+           LDDW    .D2T2   *B29++,B5:B4      ; |184| (P) <0,2> 
            NOP             2
 
-           MPY2    .M1X    B23,A7,A5:A4      ; |179| (P) <0,5> 
-||         MPY2    .M2X    B22,A6,B7:B6      ; |179| (P) <0,5> 
+           MPY2    .M1X    B23,A7,A5:A4      ; |184| (P) <0,5> 
+||         MPY2    .M2X    B22,A6,B7:B6      ; |184| (P) <0,5> 
 
            SPMASK          S1
 ||         MVKL    .S1     gtz_out-16,A22
 
            SPMASK          S1
 ||         MVKH    .S1     gtz_out-16,A22
-||         SHR     .S2     B5,16,B8          ; |179| (P) <0,7> 
-||         UNPKH2  .L1X    B22,A17:A16       ; |179| (P) <0,7> 
+||         SHR     .S2     B5,16,B8          ; |184| (P) <0,7> 
+||         UNPKH2  .L1X    B22,A17:A16       ; |184| (P) <0,7> 
 
            SPMASK          S1,S2
 ||         MV      .S2     B11,B25
 ||         MV      .S1     A11,A23
-||         UNPKH2  .L2     B5,B19:B18        ; |179| (P) <0,8> 
-||         DADD    .L1X    0,B5:B4,A21:A20   ; |179| (P) <0,8> Define a twin register
+||         UNPKH2  .L2     B5,B19:B18        ; |184| (P) <0,8> 
+||         DADD    .L1X    0,B5:B4,A21:A20   ; |184| (P) <0,8> Define a twin register
 
            SPMASK          D1,D2
 ||         MV      .D1X    B17,A19
 ||         MV      .D2X    A22,B27
-||         DSHR    .S1     A5:A4,14,A9:A8    ; |179| (P) <0,9> 
-||         UNPKH2  .L1     A20,A5:A4         ; |179| (P) <0,9> 
-||         UNPKH2  .L2     B23,B21:B20       ; |179| (P) <0,9> 
-||         DSHR    .S2     B7:B6,14,B7:B6    ; |179| (P) <0,9> 
+||         DSHR    .S1     A5:A4,14,A9:A8    ; |184| (P) <0,9> 
+||         UNPKH2  .L1     A20,A5:A4         ; |184| (P) <0,9> 
+||         UNPKH2  .L2     B23,B21:B20       ; |184| (P) <0,9> 
+||         DSHR    .S2     B7:B6,14,B7:B6    ; |184| (P) <0,9> 
 
-           EXT     .S2     B5,16,16,B9       ; |179| (P) <0,10> 
-||         EXT     .S1     A20,16,16,A21     ; |179| (P) <0,10> 
-||         DPACKL2 .L1     A17:A16,A5:A4,A17:A16 ; |179| (P) <0,10> 
-||         DPACKL2 .L2     B21:B20,B19:B18,B21:B20 ; |179| (P) <0,10> 
+           EXT     .S2     B5,16,16,B9       ; |184| (P) <0,10> 
+||         EXT     .S1     A20,16,16,A21     ; |184| (P) <0,10> 
+||         DPACKL2 .L1     A17:A16,A5:A4,A17:A16 ; |184| (P) <0,10> 
+||         DPACKL2 .L2     B21:B20,B19:B18,B21:B20 ; |184| (P) <0,10> 
 
            SPMASK          D1,S2
 ||         MV      .D1     A22,A25
 ||         ADDK    .S2     24,B27
-||         MV      .L2     B8,B18            ; |179| (P) <0,11> Split a long life
-||         SHR     .S1     A20,16,A28        ; |179| (P) <0,11> 
-||         DOTP2   .M1     A17,A17,A26       ; |179| (P) <0,11> 
-||         DOTP2   .M2     B20,B20,B24       ; |179| (P) <0,11> 
-||         DADD    .L1X    0,B7:B6,A7:A6     ; |179| (P) <0,11> Define a twin register
+||         MV      .L2     B8,B18            ; |184| (P) <0,11> Split a long life
+||         SHR     .S1     A20,16,A28        ; |184| (P) <0,11> 
+||         DOTP2   .M1     A17,A17,A26       ; |184| (P) <0,11> 
+||         DOTP2   .M2     B20,B20,B24       ; |184| (P) <0,11> 
+||         DADD    .L1X    0,B7:B6,A7:A6     ; |184| (P) <0,11> Define a twin register
 
            SPMASK          S1,L2
 ||         ADDK    .S1     16,A25
 ||         MV      .L2X    A22,B26
-||         DOTP2   .M1     A16,A16,A27       ; |179| (P) <0,12> 
-||         DOTP2   .M2     B21,B21,B19       ; |179| (P) <0,12> 
+||         DOTP2   .M1     A16,A16,A27       ; |184| (P) <0,12> 
+||         DOTP2   .M2     B21,B21,B19       ; |184| (P) <0,12> 
 
            SPMASK          S1,D1,S2
 ||         MV      .D1     A10,A3
 ||         ADDK    .S1     20,A22
 ||         ADDK    .S2     28,B26
-||         MPYLI   .M1     A21,A6,A5:A4      ; |179| (P) <0,13> 
-||         MPYLI   .M2X    B18,A9,B7:B6      ; |179| (P) <0,13> 
+||         MPYLI   .M1     A21,A6,A5:A4      ; |184| (P) <0,13> 
+||         MPYLI   .M2X    B18,A9,B7:B6      ; |184| (P) <0,13> 
 
            SPMASK          D1
 ||         MV      .D1X    B16,A18
-||         MPYLI   .M1     A28,A7,A5:A4      ; |179| (P) <0,14> 
-||         MPYLI   .M2X    B9,A8,B7:B6       ; |179| (P) <0,14> 
+||         MPYLI   .M1     A28,A7,A5:A4      ; |184| (P) <0,14> 
+||         MPYLI   .M2X    B9,A8,B7:B6       ; |184| (P) <0,14> 
 
            NOP             1
 
-           STDW    .D1T1   A19:A18,*A23++    ; |193| <0,16> 
-||         STDW    .D2T2   B17:B16,*B25++    ; |193| <0,16> 
+           STDW    .D1T1   A19:A18,*A23++    ; |197| <0,16> 
+||         STDW    .D2T2   B17:B16,*B25++    ; |197| <0,16> 
 
-           STDW    .D1T1   A19:A18,*A3++     ; |193| <0,17> 
-||         SUB     .S1     A27,A4,A20        ; |179| <0,17> 
-||         SUB     .L2     B19,B6,B19        ; |179| <0,17> 
+           STDW    .D1T1   A19:A18,*A3++     ; |197| <0,17> 
+||         SUB     .S1     A27,A4,A20        ; |184| <0,17> 
+||         SUB     .L2     B19,B6,B19        ; |184| <0,17> 
 
-           STW     .D1T1   A20,*A25++(16)    ; |179| <0,18> 
-||         SUB     .S1     A26,A4,A6         ; |179| <0,18> 
-||         SUB     .S2     B24,B6,B4         ; |179| <0,18> 
-||         STW     .D2T2   B19,*B26++(16)    ; |191| <0,18> 
+           STW     .D1T1   A20,*A25++(16)    ; |184| <0,18> 
+||         SUB     .S1     A26,A4,A6         ; |184| <0,18> 
+||         SUB     .S2     B24,B6,B4         ; |184| <0,18> 
+||         STW     .D2T2   B19,*B26++(16)    ; |195| <0,18> 
 
            SPKERNEL 3,0
-||         STW     .D1T1   A6,*A22++(16)     ; |179| <0,19> 
-||         STW     .D2T2   B4,*B27++(16)     ; |179| <0,19> 
+||         STW     .D1T1   A6,*A22++(16)     ; |184| <0,19> 
+||         STW     .D2T2   B4,*B27++(16)     ; |184| <0,19> 
 
 $C$DW$L$clk_SWI_GTZ_All_Freq$11$E:
 ;** --------------------------------------------------------------------------*
@@ -1246,30 +1246,30 @@ $C$L8:    ; PIPED LOOP EPILOG
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 11
            STW     .D2T2   B19,*+DP(Goertzel_Value$5)
-	.dwpsn	file "../main_gtz.c",line 202,column 3,is_stmt,isa 0
-           MVK     .L2     1,B4              ; |202| 
-           STW     .D2T2   B4,*+DP(flag)     ; |202| 
-	.dwpsn	file "../main_gtz.c",line 203,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |203| 
-           STW     .D2T2   B4,*+DP(N$4)      ; |203| 
 	.dwpsn	file "../main_gtz.c",line 206,column 3,is_stmt,isa 0
+           MVK     .L2     1,B4              ; |206| 
+           STW     .D2T2   B4,*+DP(flag)     ; |206| 
+	.dwpsn	file "../main_gtz.c",line 207,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |207| 
+           STW     .D2T2   B4,*+DP(N$4)      ; |207| 
+	.dwpsn	file "../main_gtz.c",line 210,column 3,is_stmt,isa 0
 $C$DW$79	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$79, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$79, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$79, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL15:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |206| 
+$C$RL15:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |210| 
 ;** --------------------------------------------------------------------------*
 ;          EXCLUSIVE CPU CYCLES: 7
-	.dwpsn	file "../main_gtz.c",line 208,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start$2),B4  ; |208| 
+	.dwpsn	file "../main_gtz.c",line 212,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start$2),B4  ; |212| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |208| 
-           STW     .D2T2   B4,*+DP(tdiff_final) ; |208| 
+           SUB     .L2X    A4,B4,B4          ; |212| 
+           STW     .D2T2   B4,*+DP(tdiff_final) ; |212| 
 ;** --------------------------------------------------------------------------*
 $C$L9:    
 ;          EXCLUSIVE CPU CYCLES: 12
-	.dwpsn	file "../main_gtz.c",line 210,column 1,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 214,column 1,is_stmt,isa 0
            LDDW    .D2T1   *++SP,A11:A10
 	.dwcfi	cfa_offset, 24
 	.dwcfi	restore_reg, 11
@@ -1281,7 +1281,7 @@ $C$L9:
            LDW     .D2T2   *++SP(8),B10
 	.dwcfi	cfa_offset, 8
 	.dwcfi	restore_reg, 26
-           LDW     .D2T2   *++SP(8),B11      ; |210| 
+           LDW     .D2T2   *++SP(8),B11      ; |214| 
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 27
 	.dwcfi	cfa_offset, 0
@@ -1292,10 +1292,10 @@ $C$DW$80	.dwtag  DW_TAG_TI_branch
            ; BRANCH OCCURS {B3}  
 
 $C$DW$81	.dwtag  DW_TAG_TI_loop
-	.dwattr $C$DW$81, DW_AT_name("E:\project\DSP_LAB\DSP_cousrsework\source_code\GTZ_all_freq_2022\Debug\main_gtz.asm:$C$L7:1:1678392831")
+	.dwattr $C$DW$81, DW_AT_name("E:\project\DSP_LAB\DSP_cousrsework\source_code\GTZ_all_freq_2022\Debug\main_gtz.asm:$C$L7:1:1678567518")
 	.dwattr $C$DW$81, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$81, DW_AT_TI_begin_line(0xab)
-	.dwattr $C$DW$81, DW_AT_TI_end_line(0xc2)
+	.dwattr $C$DW$81, DW_AT_TI_begin_line(0xae)
+	.dwattr $C$DW$81, DW_AT_TI_end_line(0xc6)
 $C$DW$82	.dwtag  DW_TAG_TI_loop_range
 	.dwattr $C$DW$82, DW_AT_low_pc($C$DW$L$clk_SWI_GTZ_All_Freq$11$B)
 	.dwattr $C$DW$82, DW_AT_high_pc($C$DW$L$clk_SWI_GTZ_All_Freq$11$E)
@@ -1303,17 +1303,17 @@ $C$DW$82	.dwtag  DW_TAG_TI_loop_range
 
 
 $C$DW$83	.dwtag  DW_TAG_TI_loop
-	.dwattr $C$DW$83, DW_AT_name("E:\project\DSP_LAB\DSP_cousrsework\source_code\GTZ_all_freq_2022\Debug\main_gtz.asm:$C$L4:1:1678392831")
+	.dwattr $C$DW$83, DW_AT_name("E:\project\DSP_LAB\DSP_cousrsework\source_code\GTZ_all_freq_2022\Debug\main_gtz.asm:$C$L4:1:1678567518")
 	.dwattr $C$DW$83, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$83, DW_AT_TI_begin_line(0x8a)
-	.dwattr $C$DW$83, DW_AT_TI_end_line(0x8e)
+	.dwattr $C$DW$83, DW_AT_TI_begin_line(0x8d)
+	.dwattr $C$DW$83, DW_AT_TI_end_line(0x91)
 $C$DW$84	.dwtag  DW_TAG_TI_loop_range
 	.dwattr $C$DW$84, DW_AT_low_pc($C$DW$L$clk_SWI_GTZ_All_Freq$4$B)
 	.dwattr $C$DW$84, DW_AT_high_pc($C$DW$L$clk_SWI_GTZ_All_Freq$4$E)
 	.dwendtag $C$DW$83
 
 	.dwattr $C$DW$65, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$65, DW_AT_TI_end_line(0xd2)
+	.dwattr $C$DW$65, DW_AT_TI_end_line(0xd6)
 	.dwattr $C$DW$65, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$65

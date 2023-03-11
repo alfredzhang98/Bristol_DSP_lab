@@ -20,7 +20,8 @@
 #define DTMF_NUM 8
 #define DTMF_HALF_NUM DTMF_NUM/2
 
-#define THRESHOLD_POWER 200
+#define THRESHOLD_POWER 50000
+//#define THRESHOLD_POWER 200
 #define N_VAL 206
 
 #endif /* GTZ_H_ */

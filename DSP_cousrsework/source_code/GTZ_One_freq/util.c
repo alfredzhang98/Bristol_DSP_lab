@@ -32,6 +32,8 @@ int flag = 0;
 
 int sample, gtz_out[8];
 
+short freqs[8] = {697, 770, 852, 941, 1209, 1336, 1477, 1633};
+
 short coef[8] = {0x6D02, 0x68AD, 0x63FC, 0x5EE7, 0x4A70, 0x4090, 0x3290, 0x23CE}; // Goertzel coefficients
 
 

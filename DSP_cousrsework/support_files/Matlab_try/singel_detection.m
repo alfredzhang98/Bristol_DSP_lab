@@ -3,7 +3,7 @@ clear
 close all;
 
 % from the python generate
-coef = 0.817779541015625;
+coef = 0.85162353515625;
 PI = 3.1415926535897932384626433832795;
 SAMPLE_RATE = 8000;
 AMP = 32768;
@@ -30,7 +30,7 @@ for freq=1:2000
 end
 
 stem(powers)
-title('770 Frquency signal detection')
+title('697 Frquency signal detection')
 xlabel('Frquencies') 
 ylabel('Magnitude of power') 
 grid on
