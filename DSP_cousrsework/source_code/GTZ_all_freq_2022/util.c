@@ -22,7 +22,7 @@
 #include <math.h>
 #include "gtz.h"
 
-#define _DEBUG
+//#define _DEBUG
 
 // there are tow function
 #define READ_BIN
@@ -112,10 +112,8 @@ void task1_dtmfDetect() {
 			/* result[n] = ... */
 		/* ========================= */
 		printf("result[%d]: %c\n", n, result[n]);
-#ifdef _DEBUG
 		printf("Every feedback cycles tdiff: %d \t Final feedforward cycles tdiff_final: %d\n", tdiff, tdiff_final);
 		printf("==================================================\n");
-#endif
 		//init the value
 		flag = 0;
 		tdiff = 0;
