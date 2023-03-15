@@ -58,7 +58,11 @@ The frequency response:
 
  Double-check the wav results
 
-![avatar](./DSP_cousrsework/validation_project/Matlab/result_test.png)
+![avatar](./DSP_cousrsework/validation_project/Matlab/audio_test.png)
+
+ Double-check the tone results
+
+![avatar](./DSP_cousrsework/validation_project/Matlab/tone_test.png)
 
 The Python folder: int to the fractional figure transfer function
 
