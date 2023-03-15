@@ -56,7 +56,15 @@ The frequency response:
 
 ![avatar](./DSP_cousrsework/validation_project/Matlab/matlab.png)
 
- Double-check the wav results
+ 
+
+**（./DSP_coursework_group5/validation_project/Matlab/audio_test.m)**
+
+Please remember to add two audio source files to the same project path
+
+(answer.wav and data_audio.wav)
+
+Double-check the wav results
 
 ![avatar](./DSP_cousrsework/validation_project/Matlab/audio_test.png)
 
